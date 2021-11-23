@@ -1,0 +1,8 @@
+<TITLE>FOLDX_optionfile;
+<Temperature>298;
+<IonStrength>0.05;
+<ph>7;
+<moveNeighbours>true;
+<VdWDesign>2;
+<numberOfRuns>3;
+<OutPDB>true;

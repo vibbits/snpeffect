@@ -1,0 +1,40 @@
+The scripts in this folder have been written by BioinformaticsCore for
+switchLab. Their purpose is to analyze SNP's to see if they change the
+structure and tendency to aggregate of a protein.
+
+To perform an analysis you must make a folder/directory, put in that folder
+the VCF file, rename it in.vcf then with that folder as working directory
+execute the command :
+  qsub -cwd -b y <scriptdir>/masterscript.pl
+It is important to use the same annotated genome as was used to generate
+the VCF file. If you used something else than hg19 you will need to edit
+the file masterscript.pl.
+
+See README_OUTPUT for a description of the content of the major output files.
+
+The script uses a database with PDB files created by switchLab. If this
+database is updated or you need an alternative, it is necessary to
+recreate the BLAST database. Execute the commands :
+  extractseqfromPDB.pl
+  makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
+
+The script also uses a NP_* NM_* RefSeq correspondence table and a table with
+UniProt standard (preferred) transcripts. See respectively the scripts
+makeNP_NMtable.pl and makeNM_ACtable.pl for how to make them.
+
+NOTE :
+1. You can restrict the output and the CPU time used by analyzing only one
+   alternative transcript per mutated gene, using the UniProt standards. The
+   current version of masterscript.pl proposes this by default. Note however
+   that you loose quite some data since some genes are not in the list and
+   some mutations are not in the standard transcript.
+2. You can perform a PolyPhen analysis. PolyPhen takes as input a SNP and
+   predicts the structural effect on a standard protein product of the gene.
+   This is however only possible for the hg19 genome and is quite CPU
+   intensive. The current version of masterscript.pl does not do this by
+   default.
+3. The lists with standard transcripts in the UniProt and PolyPhen databases
+   do not coincide strictly. Therefore it is not recommended to do both
+   1 and 2.
+
+

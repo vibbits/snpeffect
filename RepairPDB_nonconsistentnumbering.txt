@@ -1,0 +1,12 @@
+no consistently increasing aa numbers in RepairPDB_154.pdb chain A
+no consistently increasing aa numbers in RepairPDB_154.pdb chain B
+no consistently increasing aa numbers in RepairPDB_154.pdb chain C
+no consistently increasing aa numbers in RepairPDB_154.pdb chain D
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain A
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain B
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain C
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain D
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain E
+no consistently increasing aa numbers in RepairPDB_1792.pdb chain F
+no consistently increasing aa numbers in RepairPDB_182.pdb chain A
+no consistently increasing aa numbers in RepairPDB_182.pdb chain C

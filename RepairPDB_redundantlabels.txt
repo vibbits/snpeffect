@@ -1,0 +1,224 @@
+chain A of RepairPDB_10096.pdb has redundant label : short peptide
+chain B of RepairPDB_10096.pdb has redundant label : short peptide
+chain C of RepairPDB_10096.pdb has redundant label : short peptide
+chain D of RepairPDB_10096.pdb has redundant label : short peptide
+chain E of RepairPDB_10096.pdb has redundant label : short peptide
+chain A of RepairPDB_10434.pdb has redundant label : short peptide
+chain B of RepairPDB_10434.pdb has redundant label : short peptide
+chain C of RepairPDB_10434.pdb has redundant label : short peptide
+chain D of RepairPDB_10434.pdb has redundant label : short peptide
+chain A of RepairPDB_10729.pdb has redundant label : short peptide
+chain B of RepairPDB_10729.pdb has redundant label : short peptide
+chain A of RepairPDB_12864.pdb has redundant label : single amino acid
+chain B of RepairPDB_12864.pdb has redundant label : single amino acid
+chain C of RepairPDB_12864.pdb has redundant label : single amino acid
+chain D of RepairPDB_12864.pdb has redundant label : single amino acid
+chain B of RepairPDB_13122.pdb has redundant label : short peptide
+chain A of RepairPDB_13206.pdb has redundant label : single amino acid
+chain C of RepairPDB_13206.pdb has redundant label : single amino acid
+chain A of RepairPDB_13777.pdb has redundant label : short peptide
+chain B of RepairPDB_13777.pdb has redundant label : short peptide
+chain A of RepairPDB_13778.pdb has redundant label : short peptide
+chain B of RepairPDB_13778.pdb has redundant label : single amino acid
+chain A of RepairPDB_1380.pdb has redundant label : single amino acid
+chain A of RepairPDB_13912.pdb has redundant label : single amino acid
+chain B of RepairPDB_13912.pdb has redundant label : single amino acid
+chain A of RepairPDB_13956.pdb has redundant label : short peptide
+chain B of RepairPDB_13956.pdb has redundant label : short peptide
+chain 0 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 1 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 2 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 3 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 4 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 5 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 6 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 7 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 8 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 9 of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain c of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain d of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain e of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain f of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain g of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain h of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain i of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain j of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain U of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain V of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain W of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain X of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain Y of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain Z of RepairPDB_14254.pdb has redundant label : LONG PEPTIDE
+chain 1 of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 1 of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain v of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain x of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_1489.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain A of RepairPDB_15003.pdb has redundant label : single amino acid
+chain 1 of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 1 of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain v of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain x of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_15325.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain A of RepairPDB_15712.pdb has redundant label : short peptide
+chain B of RepairPDB_15712.pdb has redundant label : short peptide
+chain A of RepairPDB_16018.pdb has redundant label : short peptide
+chain B of RepairPDB_16018.pdb has redundant label : short peptide
+chain A of RepairPDB_16173.pdb has redundant label : single amino acid
+chain A of RepairPDB_16174.pdb has redundant label : single amino acid
+chain A of RepairPDB_16209.pdb has redundant label : single amino acid
+chain B of RepairPDB_16209.pdb has redundant label : single amino acid
+chain A of RepairPDB_16237.pdb has redundant label : single amino acid
+chain A of RepairPDB_1668.pdb has redundant label : short peptide
+chain B of RepairPDB_1668.pdb has redundant label : short peptide
+chain A of RepairPDB_17734.pdb has redundant label : single amino acid
+chain D of RepairPDB_17734.pdb has redundant label : single amino acid
+chain A of RepairPDB_18097.pdb has redundant label : single amino acid
+chain A of RepairPDB_18451.pdb has redundant label : single amino acid
+chain B of RepairPDB_18451.pdb has redundant label : single amino acid
+chain A of RepairPDB_18452.pdb has redundant label : single amino acid
+chain B of RepairPDB_18452.pdb has redundant label : single amino acid
+chain A of RepairPDB_18550.pdb has redundant label : single amino acid
+chain B of RepairPDB_18550.pdb has redundant label : single amino acid
+chain A of RepairPDB_18608.pdb has redundant label : single amino acid
+chain B of RepairPDB_18608.pdb has redundant label : single amino acid
+chain A of RepairPDB_18705.pdb has redundant label : single amino acid
+chain B of RepairPDB_18705.pdb has redundant label : single amino acid
+chain A of RepairPDB_18706.pdb has redundant label : single amino acid
+chain B of RepairPDB_18706.pdb has redundant label : single amino acid
+chain A of RepairPDB_20722.pdb has redundant label : single amino acid
+chain C of RepairPDB_20722.pdb has redundant label : single amino acid
+chain A of RepairPDB_20822.pdb has redundant label : short peptide
+chain C of RepairPDB_20822.pdb has redundant label : short peptide
+chain E of RepairPDB_20822.pdb has redundant label : short peptide
+chain G of RepairPDB_20822.pdb has redundant label : short peptide
+chain B of RepairPDB_2088.pdb has redundant label : single amino acid
+chain E of RepairPDB_2088.pdb has redundant label : single amino acid
+chain A of RepairPDB_2137.pdb has redundant label : single amino acid
+chain B of RepairPDB_2137.pdb has redundant label : single amino acid
+chain A of RepairPDB_2138.pdb has redundant label : single amino acid
+chain B of RepairPDB_2138.pdb has redundant label : single amino acid
+chain A of RepairPDB_22532.pdb has redundant label : short peptide
+chain B of RepairPDB_23026.pdb has redundant label : short peptide
+chain A of RepairPDB_24309.pdb has redundant label : single amino acid
+chain B of RepairPDB_24309.pdb has redundant label : single amino acid
+chain A of RepairPDB_25054.pdb has redundant label : short peptide
+chain B of RepairPDB_25054.pdb has redundant label : short peptide
+chain A of RepairPDB_25055.pdb has redundant label : short peptide
+chain B of RepairPDB_25055.pdb has redundant label : short peptide
+chain 1 of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 1 of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain v of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain x of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_25690.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain A of RepairPDB_2576.pdb has redundant label : single amino acid
+chain A of RepairPDB_26369.pdb has redundant label : single amino acid
+chain B of RepairPDB_26369.pdb has redundant label : single amino acid
+chain C of RepairPDB_26369.pdb has redundant label : single amino acid
+chain D of RepairPDB_26369.pdb has redundant label : single amino acid
+chain A of RepairPDB_26558.pdb has redundant label : short peptide
+chain B of RepairPDB_26559.pdb has redundant label : short peptide
+chain A of RepairPDB_26875.pdb has redundant label : short peptide
+chain B of RepairPDB_26875.pdb has redundant label : single amino acid
+chain C of RepairPDB_26875.pdb has redundant label : single amino acid
+chain A of RepairPDB_26876.pdb has redundant label : short peptide
+chain B of RepairPDB_26876.pdb has redundant label : single amino acid
+chain C of RepairPDB_26876.pdb has redundant label : single amino acid
+chain A of RepairPDB_28222.pdb has redundant label : single aminoa acid
+chain B of RepairPDB_28222.pdb has redundant label : single aminoa acid
+chain C of RepairPDB_28222.pdb has redundant label : single aminoa acid
+chain D of RepairPDB_28222.pdb has redundant label : single aminoa acid
+chain A of RepairPDB_28224.pdb has redundant label : single aminoa acid
+chain B of RepairPDB_28224.pdb has redundant label : single aminoa acid
+chain C of RepairPDB_28224.pdb has redundant label : single aminoa acid
+chain D of RepairPDB_28224.pdb has redundant label : single aminoa acid
+chain A of RepairPDB_28662.pdb has redundant label : short peptide
+chain B of RepairPDB_28662.pdb has redundant label : short peptide
+chain B of RepairPDB_28956.pdb has redundant label : single amino acdid
+chain C of RepairPDB_28956.pdb has redundant label : single amino acdid
+chain D of RepairPDB_28956.pdb has redundant label : short peptide
+chain A of RepairPDB_29335.pdb has redundant label : single amino acdid
+chain B of RepairPDB_29335.pdb has redundant label : single amino acdid
+chain C of RepairPDB_29335.pdb has redundant label : single amino acdid
+chain D of RepairPDB_29335.pdb has redundant label : single amino acdid
+chain A of RepairPDB_29480.pdb has redundant label : single amino acdid
+chain B of RepairPDB_29480.pdb has redundant label : single amino acdid
+chain B of RepairPDB_29704.pdb has redundant label : LONG PEPTIDE
+chain D of RepairPDB_29704.pdb has redundant label : short peptide
+chain C of RepairPDB_30322.pdb has redundant label : short peptide
+chain C of RepairPDB_30323.pdb has redundant label : short peptide
+chain A of RepairPDB_30539.pdb has redundant label : single amino acid
+chain A of RepairPDB_31120.pdb has redundant label : single amino acid
+chain C of RepairPDB_31120.pdb has redundant label : single amino acid
+chain A of RepairPDB_31935.pdb has redundant label : short peptide
+chain B of RepairPDB_31935.pdb has redundant label : short peptide
+chain A of RepairPDB_32299.pdb has redundant label : single amino acid
+chain B of RepairPDB_32299.pdb has redundant label : single amino acid
+chain A of RepairPDB_32348.pdb has redundant label : single amino acid
+chain B of RepairPDB_32348.pdb has redundant label : single amino acid
+chain C of RepairPDB_32348.pdb has redundant label : single amino acid
+chain D of RepairPDB_32348.pdb has redundant label : single amino acid
+chain A of RepairPDB_3380.pdb has redundant label : single amino acid
+chain A of RepairPDB_3381.pdb has redundant label : single amino acid
+chain C of RepairPDB_4947.pdb has redundant label : short peptide
+chain A of RepairPDB_4978.pdb has redundant label : short peptide
+chain B of RepairPDB_4978.pdb has redundant label : single amino acid
+chain 1 of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 1 of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain 3 of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain e of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain g of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain i of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain t of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain v of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE
+chain x of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE
+chain Z of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain Z of RepairPDB_6253.pdb has redundant label : LONG PEPTIDE, TWICE REDUNDANT
+chain A of RepairPDB_6503.pdb has redundant label : short peptide
+chain B of RepairPDB_6503.pdb has redundant label : short peptide
+chain A of RepairPDB_6826.pdb has redundant label : single amino acid
+chain B of RepairPDB_7499.pdb has redundant label : short peptide
+chain C of RepairPDB_7499.pdb has redundant label : short peptide
+chain D of RepairPDB_7499.pdb has redundant label : short peptide
+chain E of RepairPDB_7499.pdb has redundant label : short peptide
+chain F of RepairPDB_7499.pdb has redundant label : short peptide
+chain A of RepairPDB_8986.pdb has redundant label : single amino acid
+chain A of RepairPDB_8987.pdb has redundant label : single amino acid

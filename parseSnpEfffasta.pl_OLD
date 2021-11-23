@@ -1,0 +1,126 @@
+#!/usr/bin/perl
+# This script has been written by BioinformaticsCore for switchLab
+# It takes as input :
+#   - the fastA file written by SnpEff
+#   - the file snpEff_genes.txt made by SnpEff (needed to find the gene name)
+# It writes as output :
+#   - a fastA file with the sequences as they are in the reference genome
+#   - a nonredundant version of this file and a correspondance table
+#   - a fastA file with the mutated sequences
+#   - a file with info about the variants that need further analysis
+#  A number of sequences are excluded :
+#   - entries without information about the substitution or (bizarrily)
+#     where the original and new aa are the same (noncoding RNA, mutation
+#     outside coding sequence, silent mutation)
+#   - mutations that involve creating or removing a stop codon
+#   - mutations of initiator methionine (protein expression uncertain)
+#   - entries where the reference and/or mutated sequence contain internal
+#     stop codons (sequence maybe not expressed or not well known, anyway
+#     cannot be handled by FoldX or TANGO)
+#   - protein sequences longer than 10.000 aa (cannot be handled by
+#     AGADIR)
+#  The selected variants get a number that follows their order in the
+#  SnpEff output and roughly follows their position on the genome.
+
+%aa1 = ('Ala' => 'A', 'Arg' => 'R', 'Asn' => 'N', 'Asp' => 'D', 'Cys' => 'C',
+  'Phe' => 'F', 'Gln' => 'Q', 'Glu' => 'E', 'Gly' => 'G', 'His' => 'H',
+  'Ile' => 'I', 'Leu' => 'L', 'Lys' => 'K', 'Met' => 'M', 'Pro' => 'P',
+  'Ser' => 'S', 'Thr' => 'T', 'Trp' => 'W', 'Tyr' => 'Y', 'Val' => 'V');
+
+$MAXLEN = $ARGV[0];
+if (not $MAXLEN) { $MAXLEN = 10000 }
+
+# make a hash with the gene ID and name
+open IN, 'snpEff_genes.txt' or die "cannot open file snpEff_genes.txt\n";
+while (<IN>) {
+  if (not /^#/) {
+    if (not /^([^\t]+)\t([^\t]+)\t([^\t]+)\t/) {
+      # GeneName  GeneId  transcriptId
+      die "error in file snpEff_genes.txt :\n$_\n";
+    }
+    $genename{$3} = $1;
+    $geneID{$3} = $2;
+  }
+}
+close IN;
+
+# parse the SnpEff output
+$N = 0;
+open IN, 'out.fa' or die "cannot open out.fa\n";
+open OUTFA, '>reference_sequences.fa';
+open OUTFA2, '>mutated_sequences.fa';
+open OUTPOS, '>variants.tab';
+$firstline = <IN>;
+$firstline =~ /^>([^ ]+) Ref/;
+$ID = $1;
+$reading_refseq = 1;
+while (<IN>) {
+  chomp;
+  if (/^>([^ ]+) Ref/) {
+    &treat_sequence_pair;
+    $ID = $1;
+    $reading_refseq = 1;
+    $refseq = '';
+  } elsif (/>([^ ]+) Variant ([^ ]+) /) {
+    if ($1 ne $ID) {
+      die "ID mismatch for $_\n";
+    }
+    $chrom_pos = $2;
+    $vardef = $_ ; chomp $vardef ; $vardef =~ s/^>//;
+    $reading_refseq = 0;
+    $varseq = '';
+  } elsif ($reading_refseq) {
+    $refseq .= $_;
+  } else { # reading variant seq
+    $varseq .= $_;
+  }
+}
+&treat_sequence_pair;
+close IN ; close OUTFA ; close OUTFA2 ; close OUTPOS;
+
+# make a nonredundant reference sequence file and a hash with correspondence
+# between first sequence found and its copies
+open IN, 'reference_sequences.fa';
+open OUT, '>reference_sequences_nonredundant.fa';
+while (<IN>) {
+  $_ =~ /^>(\d+)\t(.+)$/;
+  $defline = $_ ; $Nvar = $1 ; $ID = $2;
+  $seq = <IN>;
+  if (exists $Nprimary{$ID}) {
+    $Nsecondaries{$ID} .= "\t$Nvar";
+  } else {
+    $Nprimary{$ID} = $Nvar;
+    print OUT "$defline$seq";
+  }
+}
+close IN, close OUT;
+
+# make the table with corresponcencies
+open TABLE, '>sequence_identities_unsorted.tab';
+for $k (keys %Nprimary) {
+  print TABLE $Nprimary{$k}, $Nsecondaries{$k}, "\n";
+}
+close TABLE;
+
+########################################################################
+
+sub treat_sequence_pair {
+  # reject entries with no info about amino acid change
+  # or if ref and alt aa are the same
+  if ($vardef =~ /HGVS\.p:p\.([A-Z][a-z][a-z])(\d+)([A-Z][a-z][a-z])$/) {
+    if ($1 ne $3) {
+      $refA = $aa1{$1} ; $pos = $2 ; $altA = $aa1{$3};
+      $refseq =~ s/\*$//;
+      $varseq =~ s/\*$//;
+        # remove terminal *
+      if ($refseq !~ s/[*?]// and $varseq !~ s/[*?]// and length $refseq <= 10000) {
+        # reject sequences with internal * or terminal ?
+        # and sequences longer than the limit
+        $N++;
+        print OUTFA ">$N\t$ID\n$refseq\n";
+        print OUTFA2 ">$N\t$vardef\n$varseq\n";
+        print OUTPOS "$N\t$chrom_pos\t$geneID{$ID}\t$genename{$ID}\t$ID\t$refA\t$pos\t$altA\n";
+      }
+    }
+  }
+}
