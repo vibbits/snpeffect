@@ -1,6 +1,36 @@
-The scripts in this folder have been written by BioinformaticsCore for
-switchLab. Their purpose is to analyze SNP's to see if they change the
-structure and tendency to aggregate of a protein.
+This repository accompanies the publication "SNPeffect 5.0: Large-scale structural phenotyping of protein coding variants extracted from next-generation sequencing data using AlphaFold models".
+
+# Prerequisites
+
+## GRID system
+The current scripts can be executed on a cluster using the Sun GRID system. In case, you like to use a different cluster system, you need to change all `qsub` commands in the `masterscript.pl`.
+
+## Tools
+
+There are a number of bioinformatics tools which are used in this pipeline and need to be installed prior to use on the cluster system. Below, you can find an overview of tools, its versions, the download location, and license.
+
+| tool | version | download location | license information |
+| SnpEff  5.0 | 2020-08-09 | http://pcingola.github.io/SnpEff/download/| SnpEff is open source, released as "LGPLv3". |
+| ncbi-blast-2.10.0+/ | 2.10.0 | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ |https://en.wikipedia.org/wiki/Public_domain | 
+| FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | http://foldxsuite.crg.eu/academic-license-info | 
+| AlphaFold Protein structure database | download 15-08-2021 | https://alphafold.ebi.ac.uk/download | CC-BY 4.0 |
+| HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | Freely distributed under the BSD open source license |
+| Gene3D | 
+| Tango | | link to documentation | 
+| Waltz | | 
+| tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | dedicated license from DTU |
+| PolyPhen | 2.2.2 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
+| PDB/DSSP structural databases snapshot (38G) | 2.2.3 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
+| perl | > 5.14.2 | https://www.perl.org/get.html | GPL or Artistic License |
+| UniRef100 | 14-Dec-2011 | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/| Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
+| sift | 6.2.1 | https://s3.amazonaws.com/sift-public/nsSNV/sift6.2.1.tar.gz | more info https://sift.bii.a-star.edu.sg/www/SIFT_help.html |
+| ncbi-blast | 2.4.0+ | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.4.0/ | https://en.wikipedia.org/wiki/Public_domain |
+| UniRef90 | 11-Jan-2011 release | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/ | Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
+| PROVEAN | v.1.1.5 (May 7, 2014)| http://provean.jcvi.org/downloads/README | http://provean.jcvi.org/downloads/LICENSE | 
+| CD-HIT | 4.8.1 | https://github.com/weizhongli/cdhit | GPL v2 | 
+| NCBI nr (non-redundant) protein database | Aug 2011 | | https://en.wikipedia.org/wiki/Public_domain |
+
+# Perform analysis
 
 To perform an analysis you must make a folder/directory, put in that folder
 the VCF file, rename it in.vcf then with that folder as working directory
