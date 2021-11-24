@@ -10,7 +10,7 @@ The current scripts can be executed on a cluster using the Sun GRID system. In c
 There are a number of bioinformatics tools which are used in this pipeline and need to be installed prior to use on the cluster system. Below, you can find an overview of tools, its versions, the download location, and license.
 
 | tool | version | download location | license information |
-| --- | --- | ---| --- | --- |
+| --- | --- | ---| --- | 
 | SnpEff  5.0 | 2020-08-09 | http://pcingola.github.io/SnpEff/download/| SnpEff is open source, released as "LGPLv3". |
 | ncbi-blast-2.10.0+/ | 2.10.0 | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ |https://en.wikipedia.org/wiki/Public_domain | 
 | FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | http://foldxsuite.crg.eu/academic-license-info | 
