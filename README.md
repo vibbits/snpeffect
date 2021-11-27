@@ -16,9 +16,9 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 | FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | http://foldxsuite.crg.eu/academic-license-info | 
 | AlphaFold Protein structure database | download 15-08-2021 | https://alphafold.ebi.ac.uk/download | CC-BY 4.0 |
 | HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | Freely distributed under the BSD open source license |
-| Gene3D | 
-| Tango | | link to documentation | 
-| Waltz | | 
+| Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | not specified |
+| Tango | n/a | http://tango.crg.es/ | https://switchlab.netlify.app/contact/ |
+| Waltz | n/a | https://waltz.switchlab.org/ | https://switchlab.netlify.app/contact/ |
 | tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | dedicated license from DTU |
 | PolyPhen | 2.2.2 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
 | PDB/DSSP structural databases snapshot (38G) | 2.2.3 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
@@ -29,7 +29,7 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 | UniRef90 | 11-Jan-2011 release | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/ | Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
 | PROVEAN | v.1.1.5 (May 7, 2014)| http://provean.jcvi.org/downloads/README | http://provean.jcvi.org/downloads/LICENSE | 
 | CD-HIT | 4.8.1 | https://github.com/weizhongli/cdhit | GPL v2 | 
-| NCBI nr (non-redundant) protein database | Aug 2011 | | https://en.wikipedia.org/wiki/Public_domain |
+| NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | https://en.wikipedia.org/wiki/Public_domain |
 
 # Perform analysis
 
