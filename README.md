@@ -41,11 +41,9 @@ It is important to use the same annotated genome as was used to generate
 the VCF file. If you used something else than hg19 you will need to edit
 the file masterscript.pl.
 
-See README_OUTPUT for a description of the content of the major output files.
-
-The script uses a database with PDB files created by switchLab. If this
+The script uses a database with PDB files from the AlphaFold database. If this
 database is updated or you need an alternative, it is necessary to
-recreate the BLAST database. Execute the commands :
+recreate the BLAST database. Execute the commands:
   extractseqfromPDB.pl
   makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
 
@@ -68,4 +66,118 @@ NOTE :
    do not coincide strictly. Therefore it is not recommended to do both
    1 and 2.
 
+# OUTPUT files
+
+The files FoldXreport*.tab contain the final report of predictions made
+using FoldX and PDB files with the structure of the protein or a closely
+related protein. Each file contains the following columns :
+- variant number (1 col). There are missing numbers since variants that
+  cause an SNP outside a known structure are lacking.
+- position SNP in reference genome (1 col)
+- gene and transcript identifiers from the reference genome (3 cols)
+- position SNP in protein (1 col)
+- reference PDB sequence ID (1 col)
+- FoldX mutation instruction (1 col)
+
+The file FoldXreport.tab contains one row for each variant and has
+besides the common information:
+- the labels of the polypeptide chains in the model (1 col)
+- the labels of those polypeptide chains that are reported to interact
+  energenetically (1 col)
+- the change in interaction energy caused by the mutation (1 col)
+- the output of the FoldX BuildModel command, which predicts the effect
+  of the mutation on the 3D structure (23 cols).
+
+The file FoldXreport_compact.tab is a compacted version of FoldXreport.tab.
+Lines that have the same PDB sequence ID and same FoldX mutation instruction
+(and hence the same FoldX output) have been fused, the contents of the
+noncommon fields have been replaced by comma-separated lists.
+
+The file FoldXreport_SequenceDetail.tab contains for each variant as many
+rows as there are polypeptide chains affected by the mutation. The FoldX
+mutation instruction is lacking and you have instead :
+- the amino acid (1 col)
+- the label of the polypeptide chain and the position of the amino acid in
+  this chain (2 cols)
+- the output of the FoldX SequenceDetail command, which describes the
+  environment of the amino acid (33 cols)
+
+The file FoldXreport_AnalyseComplex.tab contains for those proteins for
+which the mutation can affect the interaction between chains:
+- the labels of each pair of chains (2 cols)
+- a prediction of the effect of the mutation (5 cols)
+
+========================================================================
+
+The file SEQANALreport.tab contains the output of a series of software tools
+that can be run on the sequence without knowledge of the structure. It contains
+a row for each SNP that causes an amino acid change. It contains the following
+columns :
+- variant number (1 col)
+- position SNP in reference genome and nucleotide change (2 cols)
+- gene and transcript identifiers from the reference genome (3 cols)
+- reference amino acid, position in protein and mutated amino acid (3 cols)
+- information about CATH protein domain in which the mutation occurred,
+  as found by the Gene3D pipeline (4 cols)
+- information about transmembrane domains, as found by TMHMM (3 cols)
+- information based on TANGO and WALTZ output (36 cols)
+- SIFT prediction of effect mutation (4 cols)
+- PROVEAN prediction of effect mutation (3 cols)
+- (optionally) the accession number of the UniProt standard sequence,
+  preceded by a ~ if the variant is for another transcript of the same
+  gene (1 col)
+
+The file SEQANALreport_withPolyPhen.tab contains only variants for
+which PolyPhen found a standard transcript. It contains the same rows
+as SEQANALreport.tab, with as extra :
+- PolyPhen prediction of effect mutation (7 cols)
+- UniProt ID of protein sequence used by PolyPhen and position mutation
+  in this sequence (2 cols)
+
+SEQANALreport_compact.tab contains a subset of the data in SEQANALreport.tab.
+It contains one row for each chromosome location and amino acid change.
+
+========================================================================
+
+The file SNPpipelinereport.vcf (or SNPpipelinereport_withPolyPhen.vcf
+when PolyPhen has been run) is a VCF file based on the output of
+SnpEff, with only the records selected for further analysis and
+extra items added to the INFO field (these items provide a selection
+of the output of the analysis tools used by the pipeline).
+
+========================================================================
+  
+The scripts in this folder, as run using the pipeline defined in
+masterscript.pl, produce a lot of output files. Some of the intermediate
+output is deleted, for the sake of saving disk space; you can, if neeeded,
+outcomment unlink commands in masterscript.pl.
+
+The masterscript routinely preserves the following intermediate and
+supplementary results :
+
+in.vcf : the origninal input VCF file with the variants
+SnpEff_errors.txt : records in in.vcf that could not be parsed
+  by SnpEff because of error
+reference_sequences_nonredundant.fa : the protein sequences from the
+  reference genome in which an aa changing SNF was observed
+mutated_sequences.fa : the mutated protein sequences
+sequence_identities.tab : a correspondence table, the first column are
+  sequences in reference_sequences_nonredundant.fa, all columns together
+  point to sequences in mutated_sequences.fa
+variants_not_investigated.txt : reason why variants were not investigated
+  (too long for AGADIR or no standard protein in UniProt)
+variants_without_structure_info.txt : reasons why some variants could not
+  be submitted to FoldX
+variants_without_domain_info.txt : reasons why domain with mutation
+  info could not be reported
+variants_without_PolyPhen_standard.txt : reasons why a UniProt standard
+  (preferred) protein based on PolyPhen could not be reported
+TMHMMoutput.tab : TMHMM output
+SIFT_warnings.txt : warnings issued by SIFT, mainly about amino acids
+  in the reference sequence that seem poorly conserved
+SIFT_errors.txt : errors issued by SIFT, reason why SIFT prediction could
+  not be reported
+PolyPhen.predictions.tab : PolyPhen output
+finalreport.txt : a final count of how many mutated genes were reported
+PIPELINE_FINISHED : a timestamp file to indicate when the pipeline finished
 
