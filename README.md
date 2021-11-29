@@ -67,7 +67,9 @@ NOTE :
    1 and 2.
 
 # OUTPUT files
-
+  
+## FoldX reports
+  
 The files FoldXreport*.tab contain the final report of predictions made
 using FoldX and PDB files with the structure of the protein or a closely
 related protein. Each file contains the following columns :
@@ -107,8 +109,8 @@ which the mutation can affect the interaction between chains:
 - the labels of each pair of chains (2 cols)
 - a prediction of the effect of the mutation (5 cols)
 
-========================================================================
-
+## SEQANAL reports
+  
 The file SEQANALreport.tab contains the output of a series of software tools
 that can be run on the sequence without knowledge of the structure. It contains
 a row for each SNP that causes an amino acid change. It contains the following
@@ -137,7 +139,7 @@ as SEQANALreport.tab, with as extra :
 SEQANALreport_compact.tab contains a subset of the data in SEQANALreport.tab.
 It contains one row for each chromosome location and amino acid change.
 
-========================================================================
+## SNPpipeline report
 
 The file SNPpipelinereport.vcf (or SNPpipelinereport_withPolyPhen.vcf
 when PolyPhen has been run) is a VCF file based on the output of
@@ -145,8 +147,8 @@ SnpEff, with only the records selected for further analysis and
 extra items added to the INFO field (these items provide a selection
 of the output of the analysis tools used by the pipeline).
 
-========================================================================
-  
+## Other files
+
 The scripts in this folder, as run using the pipeline defined in
 masterscript.pl, produce a lot of output files. Some of the intermediate
 output is deleted, for the sake of saving disk space; you can, if neeeded,
@@ -155,29 +157,29 @@ outcomment unlink commands in masterscript.pl.
 The masterscript routinely preserves the following intermediate and
 supplementary results :
 
-in.vcf : the origninal input VCF file with the variants
-SnpEff_errors.txt : records in in.vcf that could not be parsed
+- in.vcf : the origninal input VCF file with the variants
+- SnpEff_errors.txt : records in in.vcf that could not be parsed
   by SnpEff because of error
-reference_sequences_nonredundant.fa : the protein sequences from the
+- reference_sequences_nonredundant.fa : the protein sequences from the
   reference genome in which an aa changing SNF was observed
-mutated_sequences.fa : the mutated protein sequences
-sequence_identities.tab : a correspondence table, the first column are
+- mutated_sequences.fa : the mutated protein sequences
+- sequence_identities.tab : a correspondence table, the first column are
   sequences in reference_sequences_nonredundant.fa, all columns together
   point to sequences in mutated_sequences.fa
-variants_not_investigated.txt : reason why variants were not investigated
+- variants_not_investigated.txt : reason why variants were not investigated
   (too long for AGADIR or no standard protein in UniProt)
-variants_without_structure_info.txt : reasons why some variants could not
+- variants_without_structure_info.txt : reasons why some variants could not
   be submitted to FoldX
-variants_without_domain_info.txt : reasons why domain with mutation
+- variants_without_domain_info.txt : reasons why domain with mutation
   info could not be reported
-variants_without_PolyPhen_standard.txt : reasons why a UniProt standard
+- variants_without_PolyPhen_standard.txt : reasons why a UniProt standard
   (preferred) protein based on PolyPhen could not be reported
-TMHMMoutput.tab : TMHMM output
-SIFT_warnings.txt : warnings issued by SIFT, mainly about amino acids
+- TMHMMoutput.tab : TMHMM output
+- SIFT_warnings.txt : warnings issued by SIFT, mainly about amino acids
   in the reference sequence that seem poorly conserved
-SIFT_errors.txt : errors issued by SIFT, reason why SIFT prediction could
+- SIFT_errors.txt : errors issued by SIFT, reason why SIFT prediction could
   not be reported
-PolyPhen.predictions.tab : PolyPhen output
-finalreport.txt : a final count of how many mutated genes were reported
-PIPELINE_FINISHED : a timestamp file to indicate when the pipeline finished
+- PolyPhen.predictions.tab : PolyPhen output
+- finalreport.txt : a final count of how many mutated genes were reported
+- PIPELINE_FINISHED : a timestamp file to indicate when the pipeline finished
 
