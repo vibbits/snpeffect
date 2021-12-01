@@ -32,36 +32,9 @@
 #   SNPEFF PARSESNPEFF BLAST PARSEBLAST FOLDX PARSEFOLDX GENE3D
 #       AGADIR PARSEAGADIR TMHMM POLYPHEN SIFT_PROVEAN FINAL
 
-# The following definitions might need to be adapted :
-### THIS IS ESPECIALLY TRUE FOR $SnpEffgenome and $PolyPhengenome !!!
-#$scriptdir = '/home/guybot/scripts';
+#The following definitions MUST be adapted
+#The user MUST specify the correct pathway for each tool
 $scriptdir = '/switchlab/group/guybot/scripts';
-$SnpEffgenome = 'hg19'; # currently only installed alternative is hg38
-  # see SnpEff software for how to install other genomes
-$SwissProtstandard = "$scriptdir/NM_AC_ID.tab $scriptdir/NM_alternatives.tab";
-#$SwissProtstandard = ''; # put this to analyze all variants, not just
-  # one transcript per gene, corresponding to the UniProt standard
-$PolyPhengenome = ''; # by default we skip PolyPhen, because time-consuming
-#$PolyPhengenome = 'hg19'; # can only be hg18 or hg19, only hg19 installed
-### NOTE THAT THE STANDARD TRANSCRIPTS IN UNIPROT AND POLYPHEN DO NOT
-### ENTIRELY COINCIDE
-
-$MAXLEN = 10000; # maximum allowed length for proteins (mainly for AGADIR)
-$Nparts4BLAST = 5; # in how many parts to split the file
-  # reference_sequences_nonreduncant.fa before sending BLAST job to GRID
-$Nparts4FoldX = 50; # in how many parts to split the file variants4foldX.tab
-  # before sending FoldX job to GRID
-$Nparts4Gene3D = 20; # in how many parts to split the file
-  # reference_sequences_nonredundant.fa before sending Gene3D pipeline to GRID
-$Nparts4AGADIR = 10; # in how many parts to split the file variants.tab
-  # before sending AGADIR pipeline to GRID
-$Nparts4predictors = 50; # in how many parts to split the file
-  # reference_sequences_nonredundant.fa before sending SIFT/PROVEAN job to GRID
-$MEM = '2G'; # node memory allocation for most jobs
-$JAVAMEM = '20G'; # node memory allocation for Java (for SnpEff)
-$BLASTMEM = '4G'; # node memory allocation for BLAST
-$FOLDXMEM = '20G'; # node memory allocation for FoldX
-$POLYPHENMEM = '50G'; # node memory allocation for PolyPhen
 $SnpEffjar = '/switchlab/group/guybot/snpEff/snpEff.jar';
 $BLAST = '/switchlab/group/guybot/ncbi-blast-2.10.0+/bin/blastp';
 $BLASTDIR = '/switchlab/group/guybot/DB';
@@ -81,6 +54,34 @@ $siftdir = '/switchlab/group/guybot/sift6.2.1';
 $BLAST4SIFTdir = '/switchlab/group/guybot/ncbi-blast-2.4.0+';
 $UniRef90_BLASTDB = '/switchlab/group/guybot/UniRef/uniref90.fa';
 $PROVEAN = '/switchlab/group/guybot/provean-1.1.5/bin/provean.sh';
+
+# The following definitions might need to be adapted :
+### THIS IS ESPECIALLY TRUE FOR $SnpEffgenome and $PolyPhengenome !!!
+$SnpEffgenome = 'hg19'; # currently only installed alternative is hg38
+  # see SnpEff software for how to install other genomes
+$SwissProtstandard = "$scriptdir/NM_AC_ID.tab $scriptdir/NM_alternatives.tab";
+#$SwissProtstandard = ''; # put this to analyze all variants, not just
+  # one transcript per gene, corresponding to the UniProt standard
+$PolyPhengenome = ''; # by default we skip PolyPhen, because time-consuming
+#$PolyPhengenome = 'hg19'; # can only be hg18 or hg19, only hg19 installed
+
+#Other definitions that the user can change
+$MAXLEN = 10000; # maximum allowed length for proteins (mainly for AGADIR)
+$Nparts4BLAST = 5; # in how many parts to split the file
+  # reference_sequences_nonreduncant.fa before sending BLAST job to GRID
+$Nparts4FoldX = 50; # in how many parts to split the file variants4foldX.tab
+  # before sending FoldX job to GRID
+$Nparts4Gene3D = 20; # in how many parts to split the file
+  # reference_sequences_nonredundant.fa before sending Gene3D pipeline to GRID
+$Nparts4AGADIR = 10; # in how many parts to split the file variants.tab
+  # before sending AGADIR pipeline to GRID
+$Nparts4predictors = 50; # in how many parts to split the file
+  # reference_sequences_nonredundant.fa before sending SIFT/PROVEAN job to GRID
+$MEM = '2G'; # node memory allocation for most jobs
+$JAVAMEM = '20G'; # node memory allocation for Java (for SnpEff)
+$BLASTMEM = '4G'; # node memory allocation for BLAST
+$FOLDXMEM = '20G'; # node memory allocation for FoldX
+$POLYPHENMEM = '50G'; # node memory allocation for PolyPhen
 
 $step = $ARGV[0];
 if ($step ne '') {
