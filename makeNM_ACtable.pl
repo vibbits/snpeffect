@@ -11,7 +11,7 @@
 #    -> 20600 entries
 # 2. download from ftp.ncbi.nlm.nih.gov
 #    in refseq/H_sapiens/mRNA_Prot
-#    human.?.protein.faa.gz (currently 9 files)      and gunzip
+#    human.?.protein.faa.gz (currently 10 files)      and gunzip
 #    -> 46121800 entries
 # 3. run this script to get only entries like
 #      NM_001008219       P04745/P0DTE7/P0DTE8    AMY1A/AMY1B/AMY1C
@@ -29,7 +29,7 @@ while (<IN>) {
 close IN;
 
 open OUT, '>temp_NM_alternatives.tab';
-for $n (1..9) {
+for $n (1..10) {
   open IN, "human.$n.protein.faa" or die "cannot open human.$n.protein.faa\n";
   $line = <IN>;
   $line =~ /^>([A-Z]P_\d+)/;
