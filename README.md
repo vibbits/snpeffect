@@ -31,10 +31,12 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 | CD-HIT | 4.8.1 | https://github.com/weizhongli/cdhit | GPL v2 | 
 | NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | https://en.wikipedia.org/wiki/Public_domain |
 
+Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
+
 # Perform analysis
 
 To perform an analysis you must make a folder/directory, put in that folder
-the VCF file, rename it in.vcf then with that folder as working directory
+the VCF file, rename it in.vcf then with that folder as working directory (specified in the `masterscript.pl`)
 execute the command :
   qsub -cwd -b y <scriptdir>/masterscript.pl
 It is important to use the same annotated genome as was used to generate
@@ -42,7 +44,7 @@ the VCF file. If you used something else than hg19 you will need to edit
 the file masterscript.pl.
 
 The script uses a database with PDB files from the AlphaFold database. If this
-database is updated or you need an alternative, it is necessary to
+database is updated or you need an alternative database, it is necessary to
 recreate the BLAST database. Execute the commands:
   extractseqfromPDB.pl
   makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
