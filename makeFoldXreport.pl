@@ -9,7 +9,7 @@
 open IN, 'BuildModel_lastline.tab' or die "cannot open BuildModel_lastline.tab\n";
 while (<IN>) {
   chomp;
-  if (not /^([A-Za-z0-9,]+;)\t(RepairPDB_\d+)_1\t(.+)$/) {
+  if (not /^([A-Za-z0-9,]+;)\t(.+)_1\t(.+)$/) {
     die "error in file BuildModel_lastline.tab :\n$_\n";
   }
   $mutationstring = $1;
@@ -22,7 +22,7 @@ close IN;
 open IN, 'interactingchains.tab' or die "cannot open interactingchains.tab\n";
 while (<IN>) {
   chomp;
-  if (not /^(RepairPDB_\d+\.pdb\t[A-Za-z0-9,]+;)\t(.+\t.+\t[-0-9\.]+)$/) {
+  if (not /^(.+\.pdb\t[A-Za-z0-9,]+;)\t(.+\t.+\t[-0-9\.]+)$/) {
     die "error in file interactingchains.tab :\n$_\n";
   }
   $chainsinfo{$1} = $2;
@@ -33,7 +33,7 @@ open OUT, '>FoldXreport.tab';
 print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tlocation on transcript\tPDB file\tmutationstring\tchains\tinteracting chains\tdelta interaction energy\tSD\ttotal energy\tBackbone Hbond\tSidechain Hbond\tVan der Waals\tElectrostatics\tSolvation Polar\tSolvation Hydrophobic\tVan der Waals clashes\tentropy sidechain\tentropy mainchain\tsloop_entropy\tmloop_entropy\tcis_bond\ttorsional clash\tbackbone clash\thelix dipole\twater bridge\tdisulfide\telectrostatic kon\tpartial covalent bonds\tenergy Ionisation\tEntropy Complex\n";
 while (<IN>) {
   chomp;
-  if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(RepairPDB_\d+.pdb)\t(.*)$/) {
+  if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(.+.pdb)\t(.*)$/) {
     die "error in file variants4foldX.tab :\n$_\n";
   } else {
     $PDBfile = $1;
