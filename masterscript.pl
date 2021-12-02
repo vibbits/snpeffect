@@ -7,8 +7,7 @@
 # It needs, besides the scripts, the following software :
 #   - SnpEff (and a SnpEff database with the same genome as that used
 #       to generate the VCF file)
-#   - BLAST (and a protein database made from the switchLab PDB files)
-#   - FoldX (and the switchLab PDB files)
+#   - FoldX (and the a databse containing PDB files)
 #   - AGADIR
 #   - Gene3D and HMMER3 (and the included database of CATH protein
 #     domain Markov models)
@@ -233,15 +232,11 @@ if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXSequenc
 if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXAnalyseComplexreport.pl") {
   die "problem with step PARSEFOLDX makeFoldXAnalyseComplexreport.pl\n";
 }
-if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/compactFoldXreport.pl") {
-  die "problem with step PARSEFOLDX compactFoldXreport.pl\n";
-}
 unlink 'BuildModel_lastline.tab', 'SequenceDetail_mutlines.tab',
   'AnalyseComplex_meandiff.tab', 'interactingchains.tab',
   'variants4foldX.tab', 'SNPAAchange.vcf';
 # workflow output : FoldXreport.tab FoldXreport_SequenceDetail.tab
-#   FoldXreport_AnalyseComplex.tab FoldXreport_compact.tab
-#   withPDB.vcf
+#   FoldXreport_AnalyseComplex.tab  withPDB.vcf
 
 GENE3D: # run the Gene3D pipeline on reference_sequences_nonredundant.fa
   # and make mutated_domains.tab
@@ -417,9 +412,6 @@ FINAL: # make final report by merging Gene3D, TANGO/WALTZ, TMHMM output
   # and mutation predictors output
 if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeSEQANALreport.pl $SwissProtstandard") {
   die "problem with step FINAL makeSEQANALreport.pl\n";
-}
-if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/compactSEQANALreport.pl") {
-  die "problem with step FINAL compactSEQANALreport.pl\n";
 }
 if ($PolyPhengenome) {
   if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/addPolyPhen2SEQANALreport.pl $scriptdir/NP_NM.tab") {
