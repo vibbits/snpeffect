@@ -9,7 +9,7 @@
 open IN, 'AnalyseComplex_meandiff.tab' or die "cannot open AnalyseComplex_meandiff.tab\n";
 while (<IN>) {
   chomp;
-  if (not /^(RepairPDB_\d+\.pdb\t[A-Za-z0-9,;]+)\t(.\t.\t.+)$/) {
+  if (not /^(.+\.pdb\t[A-Za-z0-9,;]+)\t(.\t.\t.+)$/) {
     die "error in file AnalyseComplex_meandiff.tab :\n$_\n";
   } else {
     $key = $1;
@@ -24,7 +24,7 @@ open OUT, '>FoldXreport_AnalyseComplex.tab';
 print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tposition mutation\tPDB file\tmutationstring\tChain1\tChain2\tdelta IntraclashesChain1\tdelta IntraclashesChain2\tdelta Interaction Energy\tdelta StabilityChain1\tdelta StabilityChain2";
 while (<IN>) {
   chomp;
-  if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(RepairPDB_\d+.pdb)\t(.*)$/) {
+  if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(.+.pdb)\t(.*)$/) {
     die "error in file variants4foldX.tab :\n$_\n";
   } else {
     $PDBfile = $1;
