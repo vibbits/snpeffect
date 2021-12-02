@@ -57,7 +57,7 @@ NOTE :
 1. You can restrict the output and the CPU time used by analyzing only one
    alternative transcript per mutated gene, using the UniProt standards. The
    current version of masterscript.pl proposes this by default. Note however
-   that you loose quite some data since some genes are not in the list and
+   that you loose some data since some genes are not in the list and
    some mutations are not in the standard transcript.
 2. You can perform a PolyPhen analysis. PolyPhen takes as input a SNP and
    predicts the structural effect on a standard protein product of the gene.
@@ -91,11 +91,6 @@ besides the common information:
 - the change in interaction energy caused by the mutation (1 col)
 - the output of the FoldX BuildModel command, which predicts the effect
   of the mutation on the 3D structure (23 cols).
-
-The file FoldXreport_compact.tab is a compacted version of FoldXreport.tab.
-Lines that have the same PDB sequence ID and same FoldX mutation instruction
-(and hence the same FoldX output) have been fused, the contents of the
-noncommon fields have been replaced by comma-separated lists.
 
 The file FoldXreport_SequenceDetail.tab contains for each variant as many
 rows as there are polypeptide chains affected by the mutation. The FoldX
@@ -137,9 +132,6 @@ as SEQANALreport.tab, with as extra :
 - PolyPhen prediction of effect mutation (7 cols)
 - UniProt ID of protein sequence used by PolyPhen and position mutation
   in this sequence (2 cols)
-
-SEQANALreport_compact.tab contains a subset of the data in SEQANALreport.tab.
-It contains one row for each chromosome location and amino acid change.
 
 ## SNPpipeline report
 
