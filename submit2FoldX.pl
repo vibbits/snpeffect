@@ -60,7 +60,7 @@ if (not -e 'rotabase.txt') { &setflag ; die "rotabase.txt found\n" }
 # make arrays with respectively PDB file and mutation
 open IN, 'protvariants4foldX.tab';
 while (<IN>) {
-  if (not /^(RepairPDB_\d+.pdb)\t(.*)$/) {
+  if (not /^(.+.pdb)\t(.*)$/) {
     &setflag;
     die "error in file protvariants4foldX.tab :\n$_\n";
   } else {
@@ -119,12 +119,12 @@ for ($i = 1 ; $i <= $N ; $i++) {
           $parsingheader = 0;
         }
       } elsif (not /^$/) { # note : there is an empty line at end file
-        if ($_ !~ /^\w+\.pdb\t(\w+)\t/) {
+        if ($_ !~ /^.+\.pdb\t(\w+)\t/) {
           &setflag;
           die "error in SequenceDetail_$specifier.fxout line\n $_";
         }
         if (exists $aa1{$1}) {
-          if ($_ !~ /^\w+\.pdb\t(\w+)\t(.)\t(-?\d+)/) {
+          if ($_ !~ /^.+\.pdb\t(\w+)\t(.)\t(-?\d+)/) {
             # note : some PDB files have negative pos numbers
             &setflag;
             die "error in SequenceDetail_$specifier.fxout line\n $_";
