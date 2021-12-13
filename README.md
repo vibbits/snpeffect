@@ -34,13 +34,13 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
 In addition you will nead to download and install the human genome database for SnpEff (hg19 and hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
 ```
-  java -jar snpEff.jar download hg38
+  java -jar <snpEff>/snpEff.jar download hg38
 ```
 
 Finally, you need to create a BLAST database with PDB files from the AlphaFold database. Execute the commands:
 ```
   extractseqfromPDB.pl
-  makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
+  <blastdir>/makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
 ```
 If this database is updated or you need an alternative database, it is necessary to
 recreate the BLAST database.
