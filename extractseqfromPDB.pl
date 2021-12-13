@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # This script has been written by BioinformaticsCore for switchLab
 # It parses the PDB files in
-# /switchlab/group/robkan/Homology_Human/RepairPDBs
+# /switchlab/group/ramdur/Alphafold_Human/RepairPDBs
 # and makes a fastA file with the sequences
 # It leaves out the following :
 #   - non-aa molecules/subunits (curently these are : ADP GDP GTP RET )
@@ -13,17 +13,8 @@
 # in the PDB file which will later be needed to find the position number
 # of the mutation
 
-############################################################################
-# IMPORTANT ; The PDB entries with numbers 1489 6253 14254 15325 25690 and
-# 29704 contain 2 or more long polypeptides with redundant labels and often
-# uses numbers 1-9 as label. FoldX cannot handle that. Entry 16872 also
-# has numeric labels. Hence we remove these entries completely from
-# PDBsequences.fa and PDBpositions.fa before we make the BLAST DB
-# We however do not care about short oligopeptides.
-############################################################################
-
-$highest_number = 32432;
-$dir = '/switchlab/group/robkan/Homology_Human/RepairPDBs';
+$highest_number = 23391; #Number of PDB structures
+$dir = '/switchlab/group/ramdur/Alphafold_Human/RepairPDBs'; #Folder containing PDBs
 
 %aa1 = ('ALA' => 'A', 'ARG' => 'R', 'ASN' => 'N', 'ASP' => 'D', 'CYS' => 'C',
   'PHE' => 'F', 'GLN' => 'Q', 'GLU' => 'E', 'GLY' => 'G', 'HIS' => 'H',
