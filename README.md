@@ -32,23 +32,30 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 | NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | https://en.wikipedia.org/wiki/Public_domain |
 
 Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
+In addition you will nead to download and install the human genome database for SnpEff (hg19 and hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
+```
+  java -jar snpEff.jar download GRCh38.76
+```
 
 # Perform analysis
 
 To perform an analysis you must make a folder/directory, put in that folder
 the VCF file, rename it in.vcf then with that folder as working directory (specified in the `masterscript.pl`)
 execute the command :
+```
   qsub -cwd -b y <scriptdir>/masterscript.pl
+```
 It is important to use the same annotated genome as was used to generate
-the VCF file. If you used something else than hg19 you will need to edit
+the VCF file. If you used something else than hg38 you will need to edit
 the file masterscript.pl.
 
 The script uses a database with PDB files from the AlphaFold database. If this
 database is updated or you need an alternative database, it is necessary to
 recreate the BLAST database. Execute the commands:
+```
   extractseqfromPDB.pl
   makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
-
+```
 The script also uses a NP_* NM_* RefSeq correspondence table and a table with
 UniProt standard (preferred) transcripts. See respectively the scripts
 makeNP_NMtable.pl and makeNM_ACtable.pl for how to make them.
