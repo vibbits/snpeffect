@@ -37,6 +37,14 @@ In addition you will nead to download and install the human genome database for 
   java -jar snpEff.jar download hg38
 ```
 
+Finally, you need to create a BLAST database with PDB files from the AlphaFold database. Execute the commands:
+```
+  extractseqfromPDB.pl
+  makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
+```
+If this database is updated or you need an alternative database, it is necessary to
+recreate the BLAST database.
+
 # Perform analysis
 
 To perform an analysis you must make a folder/directory, put in that folder
@@ -49,13 +57,6 @@ It is important to use the same annotated genome as was used to generate
 the VCF file. If you used something else than hg38 you will need to edit
 the file masterscript.pl.
 
-The script uses a database with PDB files from the AlphaFold database. If this
-database is updated or you need an alternative database, it is necessary to
-recreate the BLAST database. Execute the commands:
-```
-  extractseqfromPDB.pl
-  makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
-```
 The script also uses a NP_* NM_* RefSeq correspondence table and a table with
 UniProt standard (preferred) transcripts. See respectively the scripts
 makeNP_NMtable.pl and makeNM_ACtable.pl for how to make them.
