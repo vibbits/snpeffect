@@ -34,7 +34,7 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
 In addition you will nead to download and install the human genome database for SnpEff (hg19 and hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
 ```
-  java -jar snpEff.jar download GRCh38.76
+  java -jar snpEff.jar download hg38
 ```
 
 # Perform analysis
