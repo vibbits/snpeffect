@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# This script has been written by BioinformaticsCore for switchLab.
+# This script has been written by BioinformaticsCore for SwitchLab.
 # The purpose is to analyze SNP's to see if they change the structure and
 # tendency to aggregate of a protein.
 # This is the master script that sends the complete workflow to the GRID.
@@ -31,38 +31,56 @@
 #   SNPEFF PARSESNPEFF BLAST PARSEBLAST FOLDX PARSEFOLDX GENE3D
 #       AGADIR PARSEAGADIR TMHMM POLYPHEN SIFT_PROVEAN FINAL
 
-#The following definitions MUST be adapted
+#The following definitions MUST be provided by the user
 #The user MUST specify the correct pathway for each tool
-$scriptdir = '/switchlab/group/guybot/scripts';
-$SnpEffjar = '/switchlab/group/guybot/snpEff/snpEff.jar';
-$BLAST = '/switchlab/group/guybot/ncbi-blast-2.10.0+/bin/blastp';
-$BLASTDIR = '/switchlab/group/guybot/DB';
-$BLASTDB = "$BLASTDIR/PDB";
-$PDBseqfile = "$BLASTDIR/PDBsequences.fa";
-$PDBposfile = "$BLASTDIR/PDBpositions.fa";
-$FoldX = '/switchlab/group/tools/FoldX_2015/FoldX';
-$rotabase = '/switchlab/group/tools/FoldX_OldVersions/foldx_test/rotabase.txt';
-$PDBDIR = '/switchlab/group/robkan/Homology_Human/RepairPDBs';
-$python = '/usr/bin/python';
-$hmmsearch = '/switchlab/group/guybot/HMMER3/bin/hmmsearch';
-$gene3d = '/switchlab/group/guybot/gene3d_hmmsearch';
-$agadir = '/switchlab/group/tools/agawrapper2016_2/agadirwrapper';
-$tmhmm = '/switchlab/group/guybot/tmhmm-2.0c/bin/tmhmm';
-$polyphendir = '/switchlab/group/guybot/polyphen-2.2.2/bin';
-$siftdir = '/switchlab/group/guybot/sift6.2.1';
-$BLAST4SIFTdir = '/switchlab/group/guybot/ncbi-blast-2.4.0+';
-$UniRef90_BLASTDB = '/switchlab/group/guybot/UniRef/uniref90.fa';
-$PROVEAN = '/switchlab/group/guybot/provean-1.1.5/bin/provean.sh';
+
+#path of the directory containing the masterscript.pl
+$scriptdir = '';  # Example: '/switchlab/group/ramdur/scripts'
+#path to snpEff software
+$SnpEffjar = '';  # Example: '/switchlab/group/guybot/snpEff/snpEff.jar'
+#path to blastp
+$BLAST = '';  # Example: '/switchlab/group/guybot/ncbi-blast-2.10.0+/bin/blastp'
+#path to BLAST DB of PDB structures
+$BLASTDIR = '';  # Example: '/switchlab/group/ramdur/Alphafold_Human/DB'
+#path to FoldX software
+$FoldX = ''; # Example: '/switchlab/group/tools/FoldX_2015/FoldX'
+#path to directory containing PDB structures
+$PDBDIR = ''; # Example: '/switchlab/group/ramdur/Alphafold_Human/RepairPDBs'
+#path to python
+$python = ''; # Example: '/usr/bin/python'
+#path to hmmsearch
+$hmmsearch = ''; # Example: '/switchlab/group/guybot/HMMER3/bin/hmmsearch'
+#path to gene3d_hmmsearch
+$gene3d = ''; # Example: '/switchlab/group/guybot/gene3d_hmmsearch'
+#path to agadirwrapper
+$agadir = ''; # Example: '/switchlab/group/tools/agawrapper2016_2/agadirwrapper'
+#path to tmhmm
+$tmhmm = ''; # Example: '/switchlab/group/guybot/tmhmm-2.0c/bin/tmhmm'
+#path to polyphen directory
+$polyphendir = ''; # Example: '/switchlab/group/guybot/polyphen-2.2.2/bin'
+#path to sift directory
+$siftdir = ''; # Example: '/switchlab/group/guybot/sift6.2.1'
+#path to blast ncbi-blast 2.4.0+
+$BLAST4SIFTdir = ''; # Example: '/switchlab/group/guybot/ncbi-blast-2.4.0+'
+#path to Uniref90 sequences
+$UniRef90_BLASTDB = ''; # Example: '/switchlab/group/guybot/UniRef/uniref90.fa'
+#path to PROVEAN software
+$PROVEAN = ''; # Example: '/switchlab/group/guybot/provean-1.1.5/bin/provean.sh'
 
 # The following definitions might need to be adapted :
 ### THIS IS ESPECIALLY TRUE FOR $SnpEffgenome and $PolyPhengenome !!!
-$SnpEffgenome = 'hg19'; # currently only installed alternative is hg38
-  # see SnpEff software for how to install other genomes
 $SwissProtstandard = "$scriptdir/NM_AC_ID.tab $scriptdir/NM_alternatives.tab";
 #$SwissProtstandard = ''; # put this to analyze all variants, not just
   # one transcript per gene, corresponding to the UniProt standard
 $PolyPhengenome = ''; # by default we skip PolyPhen, because time-consuming
-#$PolyPhengenome = 'hg19'; # can only be hg18 or hg19, only hg19 installed
+#$PolyPhengenome = 'hg19'; # can only be hg18 or hg19
+$SnpEffgenome = 'hg38'; #SnpEff genome installed
+  # see SnpEff software for how to install other genomes
+#Different elements within the BLAST DB
+$BLASTDB = "$BLASTDIR/PDB";
+$PDBseqfile = "$BLASTDIR/PDBsequences.fa";
+$PDBposfile = "$BLASTDIR/PDBpositions.fa";
+$rotabase = '$scriptdir/rotabase.txt'; 
 
 #Other definitions that the user can change
 $MAXLEN = 10000; # maximum allowed length for proteins (mainly for AGADIR)
