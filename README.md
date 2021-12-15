@@ -43,9 +43,9 @@ It is highly recommended to repair the PDB structures (energy minimization of th
 ```
 To see more parameters you can visit http://foldxsuite.crg.eu/command/RepairPDB.
 
-Finally, you need to create a BLAST database of the PDB files. Execute the commands:
+Finally, you need to create a BLAST database of the PDB files. In a new empty folder execute the commands:
 ```
-  extractseqfromPDB.pl
+  perl extractseqfromPDB.pl <PDBsdir>
   <blastdir>/makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
 ```
 If this database is updated or you want to use an alternative PDB database, you can follow the same steps to recreate the BLAST database. 
