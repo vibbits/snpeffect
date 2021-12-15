@@ -123,7 +123,6 @@ while (<IN>) {
 }
 &treat_sequence_pair;
 close IN ; close OUTFA ; close OUTFA2 ; close OUTPOS ; close LOG;
-die "checks!!";
 
 # make a nonredundant reference sequence file and a hash with correspondence
 # between first sequence found and its copies
