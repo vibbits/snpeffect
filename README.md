@@ -32,18 +32,23 @@ There are a number of bioinformatics tools which are used in this pipeline and n
 | NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | https://en.wikipedia.org/wiki/Public_domain |
 
 Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
-In addition you will nead to download and install the human genome database for SnpEff (hg19 and hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
+In addition you will nead to download and install the human genome database for SnpEff (hg19 and/or hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
 ```
   java -jar <snpEff>/snpEff.jar download hg38
 ```
 
-Finally, you need to create a BLAST database with PDB files from the AlphaFold database. Execute the commands:
+It is highly recommended to repair the PDB structures (energy minimization of the side chains) before you do any modelling with FoldX. You can repair the structures using the RepairPDB function in FoldX:
+```
+  <foldxdir>/FoldX --command=RepairPDB --pdb=RP.pdb
+```
+To see more parameters you can visit http://foldxsuite.crg.eu/command/RepairPDB.
+
+Finally, you need to create a BLAST database of the PDB files. Execute the commands:
 ```
   extractseqfromPDB.pl
   <blastdir>/makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
 ```
-If this database is updated or you need an alternative database, it is necessary to
-recreate the BLAST database.
+If this database is updated or you want to use an alternative PDB database, you can follow the same steps to recreate the BLAST database. 
 
 # Perform analysis
 
@@ -54,12 +59,12 @@ execute the command :
   qsub -cwd -b y <scriptdir>/masterscript.pl
 ```
 It is important to use the same annotated genome as was used to generate
-the VCF file. If you used something else than hg38 you will need to edit
-the file masterscript.pl.
+the VCF file. As default the pipeline uses hg38. If you used something else, you will need to edit
+the file `masterscript.pl`.
 
 The script also uses a NP_* NM_* RefSeq correspondence table and a table with
 UniProt standard (preferred) transcripts. See respectively the scripts
-makeNP_NMtable.pl and makeNM_ACtable.pl for how to make them.
+`makeNP_NMtable.pl` and `makeNM_ACtable.pl` in case you want to update them.
 
 NOTE :
 1. You can restrict the output and the CPU time used by analyzing only one
