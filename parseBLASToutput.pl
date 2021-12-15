@@ -55,7 +55,7 @@ close IN;
 # for FoldX
 open IN, "$posfile" or die "cannot open $posfile\n";
 while (<IN>) {
-  if (/^>(\d+_\w)/) {
+  if (/^>(.+_\w)/) {
     $NPDB_chain = $1;
   } elsif (/^\d/) {
     chomp; # to avoid having the end-of-line incorparated into the last number
@@ -73,7 +73,7 @@ close IN;
 # position of the mutation
 open IN, "$seqfile" or die "cannot open $seqfile\n";
 while (<IN>) {
-  if (/^>(\d+_\w)/) {
+  if (/^>(.+_\w)/) {
     $NPDB_chain = $1;
   } elsif (/^[A-Z]/) {
     chomp;
@@ -90,7 +90,7 @@ while (<IN>) {
     $ismatch = 0;
   } elsif (/^# Query: (\d+)/) {
     $Nvar = $1;
-  } elsif (/^(\d+)\t(\d+)_(\w)\t([0-9\.]+\t(.+)\n$)/) {
+  } elsif (/^(\d+)\t(.+)_(\w)\t([0-9\.]+\t(.+)\n$)/) {
       # variant number ; PDB number ; chain ; %ident ; rest of line
     if ($1 != $Nvar) { die "var number mismatch at $Nvar $1\n"; }
     if ($ismatch) {
