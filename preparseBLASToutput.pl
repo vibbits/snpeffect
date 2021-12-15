@@ -35,7 +35,7 @@ while (<IN>) {
   } elsif (/^# Query: (\d+)/) {
     $Nvar_entry = $1;
     $entry .= $_;
-  } elsif (/^(\d+)\t(\d+)_(\w)\t([0-9\.]+\t(.+)\n$)/) {
+  } elsif (/^(\d+)\t(.+)_(\w)\t([0-9\.]+\t(.+)\n$)/) {
       # variant number ; PDB number ; chain ; %ident ; rest of line
     if ($1 != $Nvar_entry) { die "var number mismatch at $_ \n"; }
     if ($4 == 100.0) {
