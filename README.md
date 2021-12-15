@@ -69,13 +69,13 @@ UniProt standard (preferred) transcripts. See respectively the scripts
 NOTE :
 1. You can restrict the output and the CPU time used by analyzing only one
    alternative transcript per mutated gene, using the UniProt standards. The
-   current version of masterscript.pl proposes this by default. Note however
+   current version of `masterscript.pl` proposes this by default. Note however
    that you loose some data since some genes are not in the list and
    some mutations are not in the standard transcript.
 2. You can perform a PolyPhen analysis. PolyPhen takes as input a SNP and
    predicts the structural effect on a standard protein product of the gene.
    This is however only possible for the hg19 genome and is quite CPU
-   intensive. The current version of masterscript.pl does not do this by
+   intensive. The current version of `masterscript.pl` does not do this by
    default.
 3. The lists with standard transcripts in the UniProt and PolyPhen databases
    do not coincide strictly. Therefore it is not recommended to do both
@@ -157,9 +157,9 @@ of the output of the analysis tools used by the pipeline).
 ## Other files
 
 The scripts in this folder, as run using the pipeline defined in
-masterscript.pl, produce a lot of output files. Some of the intermediate
+`masterscript.pl`, produce a lot of output files. Some of the intermediate
 output is deleted, for the sake of saving disk space; you can, if neeeded,
-outcomment unlink commands in masterscript.pl.
+outcomment unlink commands in `masterscript.pl`.
 
 The masterscript routinely preserves the following intermediate and
 supplementary results :
