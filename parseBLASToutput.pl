@@ -115,7 +115,7 @@ sub treatentry {
   if ($ismatch) {
     if ($mutationstring) {
       chop $mutationstring; # remove trailing ,
-      print OUT "$Nvar\t$chrom_loc[$Nvar]\t$seqID[$Nvar]\t$seqpos[$Nvar]\tRepairPDB_$NPDB.pdb\t$mutationstring;\n";
+      print OUT "$Nvar\t$chrom_loc[$Nvar]\t$seqID[$Nvar]\t$seqpos[$Nvar]\t$NPDB.pdb\t$mutationstring;\n";
     } elsif (not $aa_mismatch) {
       print LOG "var_$Nvar ($seqID[$Nvar] $seqpos[$Nvar]) has SNP outside PDB entry $NPDB.\n";
     }
