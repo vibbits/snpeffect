@@ -80,7 +80,7 @@ $SnpEffgenome = 'hg38'; #SnpEff genome installed
 $BLASTDB = "$BLASTDIR/PDB";
 $PDBseqfile = "$BLASTDIR/PDBsequences.fa";
 $PDBposfile = "$BLASTDIR/PDBpositions.fa";
-$rotabase = '$scriptdir/rotabase.txt'; 
+$rotabase = "$scriptdir/rotabase.txt"; 
 
 #Other definitions that the user can change
 $MAXLEN = 10000; # maximum allowed length for proteins (mainly for AGADIR)
