@@ -37,7 +37,7 @@ In addition you will nead to download and install the human genome database for 
   java -jar <snpEff>/snpEff.jar download hg38
 ```
 
-It is highly recommended to repair the PDB structures (energy minimization of the side chains) before you do any modelling with FoldX. You can repair the structures using the RepairPDB function in FoldX:
+It is highly recommended to repair the PDB structures (energy minimization of the side chains) before you do any modelling with FoldX. You can repair the structures using the RepairPDB function in FoldX. It can be run from the command line:
 ```
   <foldxdir>/FoldX --command=RepairPDB --pdb=RP.pdb
 ```
