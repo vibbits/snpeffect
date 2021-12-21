@@ -52,8 +52,6 @@ $python = ''; # Example: '/usr/bin/python'
 $hmmsearch = ''; # Example: '/switchlab/group/guybot/HMMER3/bin/hmmsearch'
 #path to gene3d_hmmsearch
 $gene3d = ''; # Example: '/switchlab/group/guybot/gene3d_hmmsearch'
-#path to agadirwrapper
-$agadir = ''; # Example: '/switchlab/group/tools/agawrapper2016_2/agadirwrapper'
 #path to tmhmm
 $tmhmm = ''; # Example: '/switchlab/group/guybot/tmhmm-2.0c/bin/tmhmm'
 #path to polyphen directory
@@ -76,11 +74,10 @@ $PolyPhengenome = ''; # by default we skip PolyPhen, because time-consuming
 #$PolyPhengenome = 'hg19'; # can only be hg18 or hg19
 $SnpEffgenome = 'hg38'; #SnpEff genome installed
   # see SnpEff software for how to install other genomes
-#Different elements within the BLAST DB
+#Different elements within the BLAST DB. The user needs to make the blast DB.
 $BLASTDB = "$BLASTDIR/PDB";
 $PDBseqfile = "$BLASTDIR/PDBsequences.fa";
 $PDBposfile = "$BLASTDIR/PDBpositions.fa";
-$rotabase = "$scriptdir/rotabase.txt"; 
 
 #Other definitions that the user can change
 $MAXLEN = 10000; # maximum allowed length for proteins (mainly for AGADIR)
@@ -99,6 +96,8 @@ $JAVAMEM = '20G'; # node memory allocation for Java (for SnpEff)
 $BLASTMEM = '4G'; # node memory allocation for BLAST
 $FOLDXMEM = '20G'; # node memory allocation for FoldX
 $POLYPHENMEM = '50G'; # node memory allocation for PolyPhen
+$rotabase = "$scriptdir/rotabase.txt"; #path to rotabase.txt
+$agadir = "$scriptdir/agadirwrapper"; #path to agadirwrapper
 
 $step = $ARGV[0];
 if ($step ne '') {
