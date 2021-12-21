@@ -7,7 +7,8 @@ The current scripts can be executed on a cluster using the Sun GRID system. In c
 
 ## Tools
 
-There are a number of bioinformatics tools which are used in this pipeline and need to be installed prior to use on the cluster system. Below, you can find an overview of tools, its versions, the download location, and license. For AGADIR (a wrapper including TANGO and WALTZ), you can unzip the file `agadirwrapper.zip`.
+There are a number of bioinformatics tools which are used in this pipeline and need to be installed prior to use on the cluster system. Below, you can find an overview of tools, its versions, the download location, and license. 
+For AGADIR (a wrapper containing the protein aggregation predictors TANGO and WALTZ), you can unzip the file `agadirwrapper.zip`.
 
 | tool | version | download location | license information |
 | --- | --- | ---| --- | 
