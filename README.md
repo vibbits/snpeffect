@@ -19,10 +19,7 @@ For AGADIR (a wrapper containing the protein aggregation predictors TANGO and WA
 | HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | Freely distributed under the BSD open source license |
 | Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | not specified |
 | tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | dedicated license from DTU |
-| PolyPhen | 2.2.2 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
-| PDB/DSSP structural databases snapshot (38G) | 2.2.3 | http://genetics.bwh.harvard.edu/pph2/dokuwiki/downloads | free for academic instruction and research use only |
 | perl | > 5.14.2 | https://www.perl.org/get.html | GPL or Artistic License |
-| UniRef100 | 14-Dec-2011 | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/| Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
 | sift | 6.2.1 | https://s3.amazonaws.com/sift-public/nsSNV/sift6.2.1.tar.gz | more info https://sift.bii.a-star.edu.sg/www/SIFT_help.html |
 | ncbi-blast | 2.4.0+ | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.4.0/ | https://en.wikipedia.org/wiki/Public_domain |
 | UniRef90 | 11-Jan-2011 release | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/ | Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
@@ -66,19 +63,12 @@ UniProt standard (preferred) transcripts. See respectively the scripts
 `makeNP_NMtable.pl` and `makeNM_ACtable.pl` in case you want to update them.
 
 NOTE :
-1. You can restrict the output and the CPU time used by analyzing only one
-   alternative transcript per mutated gene, using the UniProt standards. The
-   current version of `masterscript.pl` proposes this by default. Note however
-   that you loose some data since some genes are not in the list and
-   some mutations are not in the standard transcript.
-2. You can perform a PolyPhen analysis. PolyPhen takes as input a SNP and
-   predicts the structural effect on a standard protein product of the gene.
-   This is however only possible for the hg19 genome and is quite CPU
-   intensive. The current version of `masterscript.pl` does not do this by
-   default.
-3. The lists with standard transcripts in the UniProt and PolyPhen databases
-   do not coincide strictly. Therefore it is not recommended to do both
-   1 and 2.
+You can restrict the output and the CPU time used by analyzing only one
+alternative transcript per mutated gene, using the UniProt standards. The
+current version of `masterscript.pl` proposes this by default. Note however
+that you loose some data since some genes are not in the list and
+some mutations are not in the standard transcript.
+
 
 # OUTPUT files
   
@@ -138,17 +128,9 @@ columns :
   preceded by a ~ if the variant is for another transcript of the same
   gene (1 col)
 
-The file SEQANALreport_withPolyPhen.tab contains only variants for
-which PolyPhen found a standard transcript. It contains the same rows
-as SEQANALreport.tab, with as extra :
-- PolyPhen prediction of effect mutation (7 cols)
-- UniProt ID of protein sequence used by PolyPhen and position mutation
-  in this sequence (2 cols)
-
 ## SNPpipeline report
 
-The file SNPpipelinereport.vcf (or SNPpipelinereport_withPolyPhen.vcf
-when PolyPhen has been run) is a VCF file based on the output of
+The file SNPpipelinereport.vcf is a VCF file based on the output of
 SnpEff, with only the records selected for further analysis and
 extra items added to the INFO field (these items provide a selection
 of the output of the analysis tools used by the pipeline).
@@ -178,14 +160,11 @@ supplementary results :
   be submitted to FoldX
 - variants_without_domain_info.txt : reasons why domain with mutation
   info could not be reported
-- variants_without_PolyPhen_standard.txt : reasons why a UniProt standard
-  (preferred) protein based on PolyPhen could not be reported
 - TMHMMoutput.tab : TMHMM output
 - SIFT_warnings.txt : warnings issued by SIFT, mainly about amino acids
   in the reference sequence that seem poorly conserved
 - SIFT_errors.txt : errors issued by SIFT, reason why SIFT prediction could
   not be reported
-- PolyPhen.predictions.tab : PolyPhen output
 - finalreport.txt : a final count of how many mutated genes were reported
 - PIPELINE_FINISHED : a timestamp file to indicate when the pipeline finished
 
