@@ -104,7 +104,7 @@ for $key (sort keys %mutated_genes) {
   }
 }
 print OUT "\n\n";
-print OUT "genes for which there are SNP's suited for analysis but no related known\n  structure in the SwitchLab PDB files :\n";
+print OUT "genes for which there are SNP's suited for analysis but no related known\n  structure in the PDB files :\n";
 $n = 0;
 for $key (sort keys %mutated_genes) {
   if ($mutated_genes{$key} == 3) {
@@ -114,7 +114,7 @@ for $key (sort keys %mutated_genes) {
   }
 }
 print OUT "\n\n";
-print OUT "genes for which there is a related known structure in the SwitchLab\n  PDB files :\n";
+print OUT "genes for which there is a related known structure in the \n  PDB files :\n";
 $n = 0;
 for $key (sort keys %mutated_genes) {
   if ($mutated_genes{$key} == 4) {
