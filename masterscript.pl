@@ -12,8 +12,6 @@
 #   - Gene3D and HMMER3 (and the included database of CATH protein
 #     domain Markov models)
 #   - TMHMM
-#   - PolyPhen, the 14-Dec-2011 release of UniRef100 and recent
-#     versions of PDB and DSSP
 #   - PROVEAN, CD-HIT, BLAST version 2.4.0+ and the August 2011 release
 #     of the NCBI NR protein databank (from PROVEAN site)
 #   - SIFT and the 11-Jan-2011 release of UniRef90
@@ -29,7 +27,7 @@
 #     qsub -cwd -b y masterscript.pl SNPEFF
 # The script performs the following steps :
 #   SNPEFF PARSESNPEFF BLAST PARSEBLAST FOLDX PARSEFOLDX GENE3D
-#       AGADIR PARSEAGADIR TMHMM POLYPHEN SIFT_PROVEAN FINAL
+#       AGADIR PARSEAGADIR TMHMM SIFT_PROVEAN FINAL
 
 #The following definitions MUST be provided by the user
 #The user MUST specify the correct pathway for each tool
@@ -54,8 +52,6 @@ $hmmsearch = ''; # Example: '/switchlab/group/guybot/HMMER3/bin/hmmsearch'
 $gene3d = ''; # Example: '/switchlab/group/guybot/gene3d_hmmsearch'
 #path to tmhmm
 $tmhmm = ''; # Example: '/switchlab/group/guybot/tmhmm-2.0c/bin/tmhmm'
-#path to polyphen directory
-$polyphendir = ''; # Example: '/switchlab/group/guybot/polyphen-2.2.2/bin'
 #path to sift directory
 $siftdir = ''; # Example: '/switchlab/group/guybot/sift6.2.1'
 #path to blast ncbi-blast 2.4.0+
@@ -66,12 +62,10 @@ $UniRef90_BLASTDB = ''; # Example: '/switchlab/group/guybot/UniRef/uniref90.fa'
 $PROVEAN = ''; # Example: '/switchlab/group/guybot/provean-1.1.5/bin/provean.sh'
 
 # The following definitions might need to be adapted :
-### THIS IS ESPECIALLY TRUE FOR $SnpEffgenome and $PolyPhengenome !!!
+### THIS IS ESPECIALLY TRUE FOR $SnpEffgenome!!
 $SwissProtstandard = "$scriptdir/NM_AC_ID.tab $scriptdir/NM_alternatives.tab";
 #$SwissProtstandard = ''; # put this to analyze all variants, not just
   # one transcript per gene, corresponding to the UniProt standard
-$PolyPhengenome = ''; # by default we skip PolyPhen, because time-consuming
-#$PolyPhengenome = 'hg19'; # can only be hg18 or hg19
 $SnpEffgenome = 'hg38'; #SnpEff genome installed
   # see SnpEff software for how to install other genomes
 #Different elements within the BLAST DB. The user needs to make the blast DB.
@@ -95,7 +89,6 @@ $MEM = '2G'; # node memory allocation for most jobs
 $JAVAMEM = '20G'; # node memory allocation for Java (for SnpEff)
 $BLASTMEM = '4G'; # node memory allocation for BLAST
 $FOLDXMEM = '20G'; # node memory allocation for FoldX
-$POLYPHENMEM = '50G'; # node memory allocation for PolyPhen
 $rotabase = "$scriptdir/rotabase.txt"; #path to rotabase.txt
 $agadir = "$scriptdir/agadirwrapper"; #path to agadirwrapper
 
@@ -367,26 +360,6 @@ if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/findTMs.pl $tmhm
 }
 # workflow output : TMHMMoutput.tab TMcheck.tab
 
-POLYPHEN: # run PolyPhen for each reported SNP for each chromosomal location
-if (not $PolyPhengenome) { goto SIFT_PROVEAN }
-if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeSNPlist4PolyPhen.pl") {
-  die "problem with POLYPHEN step makeSNPlist4PolyPhen.pl\n";
-}
-system "sort -u SNP4PolyPhen_unsorted.list > SNP4PolyPhen.list";
-open SCRIPT, '>PolyPhenscript.sh';
-  print SCRIPT "module load perl\n";
-  print SCRIPT "$polyphendir/mapsnps.pl -g $PolyPhengenome -m -y SNP4PolyPhen_mapped.list SNP4PolyPhen.list &> /dev/null\n";
-  print SCRIPT "$polyphendir/run_pph.pl -d polyphen_scratch -g $PolyPhengenome SNP4PolyPhen_mapped.list 1> PolyPhen.feature.tabs 2> /dev/null\n";
-  print SCRIPT "$polyphendir/run_weka.pl PolyPhen.feature.tabs 1> PolyPhen.predictions.tab\n";
-close SCRIPT;
-if (system "qsub -cwd -sync y -l mem_limit=$POLYPHENMEM PolyPhenscript.sh") {
-  die "problem with POLYPHEN\n";
-}
-system "rm -r polyphen_scratch";
-unlink 'SNP4PolyPhen_unsorted.list', 'PolyPhenscript.sh',
-  'SNP4PolyPhen_mapped.list', 'PolyPhen.feature.tabs';
-# workflow output : SNP4PolyPhen.list PolyPhen.prediction.tabs
-
 SIFT_PROVEAN: # run SIFT and PROVEAN on each SNP
 $Nlines = `wc -l reference_sequences_nonredundant.fa`;
 $Nlines = $Nlines * 1; # remove file name from wc output
@@ -430,33 +403,13 @@ FINAL: # make final report by merging Gene3D, TANGO/WALTZ, TMHMM output
 if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeSEQANALreport.pl $SwissProtstandard") {
   die "problem with step FINAL makeSEQANALreport.pl\n";
 }
-if ($PolyPhengenome) {
-  if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/addPolyPhen2SEQANALreport.pl $scriptdir/NP_NM.tab") {
-    die "problem with step FINAL addPolyPhen2SEQANALreport.pl\n";
+if ($SwissProtstandard) {
+  if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes_withSwissProtstandard.pl") {
+    die "problem with step FINAL countgenes_withSwissProtstandard.pl\n";
   }
-  if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/addPolyPhen2VCF.pl") {
-    die "problem with step FINAL addPolyPhen2VCF.pl.pl\n";
-  }
-  if ($SwissProtstandard) {
-    if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes_withSwissProtANDPolyPhenstandard.pl") {
-      die "problem with step FINAL countgenes_withSwissProtANDPolyPhenstandard.pl\n";
-    }
-  } else {
-    if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes_withPolyPhenstandard.pl") {
-      die "problem with step FINAL countgenes_withPolyPhenstandard.pl\n";
-    }
-  }
-  unlink 'SNP4PolyPhen.list', 'SNPpipelinereport.vcf',
-    'FoldXreport_withPolyPhenonly.tab';
 } else {
-  if ($SwissProtstandard) {
-    if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes_withSwissProtstandard.pl") {
-      die "problem with step FINAL countgenes_withSwissProtstandard.pl\n";
-    }
-  } else {
-    if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes.pl") {
-      die "problem with step FINAL countgenes.pl\n";
-    }
+  if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/countgenes.pl") {
+    die "problem with step FINAL countgenes.pl\n";
   }
 }
 unlink 'snpEff_genes.txt'; # IF NEEDED OUTCOMMENT
@@ -469,6 +422,4 @@ system 'rm *.o* *.e*';
 open MARK, '>PIPELINE_FINISHED' ; close MARK;
 # workflow output :
 #   SEQANALreport.tab SNPpipelinereport.vcf finalreport.txt
-#   SNPpipelinereport.vcf OR SNPpipelinereport_withPolyPhen.vcf
-# in case PolyPhen analysis also : SEQANALreport_withPolyPhen.tab
-#   variants_without_PolyPhen_standard.txt
+#   SNPpipelinereport.vcf 
