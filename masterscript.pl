@@ -155,10 +155,6 @@ unlink 'out.fmt7_blastp';
 for ($i = 1 ; $i <= $Nparts4BLAST ; $i++) {
   system "cat out.${i}.fmt7_blastp >> out.fmt7_blastp";
 }
-$BLASTerror = `cat BLASTscript.*.sh.e*`;
-if ($BLASTerror ne '') {
-  die "problem with step BLAST\n";
-}
 if (-z 'out.fmt7_blastp') {
   die "problem with step BLAST\n";
 }
