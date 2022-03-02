@@ -1,0 +1,860 @@
+NM_001004758.1  M303K :
+WARNING! H68 not allowed! score: 0.03 median: 2.76 # of sequence: 187
+WARNING! V110 not allowed! score: 0.01 median: 2.73 # of sequence: 189
+WARNING! I128 not allowed! score: 0.05 median: 2.73 # of sequence: 189
+WARNING! Y173 not allowed! score: 0.02 median: 2.73 # of sequence: 190
+WARNING! E199 not allowed! score: 0.03 median: 2.73 # of sequence: 190
+WARNING! E236 not allowed! score: 0.01 median: 2.73 # of sequence: 190
+WARNING! N269 not allowed! score: 0.04 median: 2.73 # of sequence: 190
+WARNING! P271 not allowed! score: 0.03 median: 2.73 # of sequence: 189
+WARNING! E272 not allowed! score: 0.02 median: 2.73 # of sequence: 189
+WARNING! T276 not allowed! score: 0.02 median: 2.73 # of sequence: 188
+NM_033179.2  R309M :
+WARNING! L16 not allowed! score: 0.05 median: 2.78 # of sequence: 350
+WARNING! S18 not allowed! score: 0.03 median: 2.78 # of sequence: 350
+WARNING! R24 not allowed! score: 0.01 median: 2.78 # of sequence: 350
+WARNING! M27 not allowed! score: 0.02 median: 2.78 # of sequence: 350
+WARNING! S28 not allowed! score: 0.02 median: 2.78 # of sequence: 350
+WARNING! L115 not allowed! score: 0.01 median: 2.78 # of sequence: 359
+WARNING! C119 not allowed! score: 0.03 median: 2.78 # of sequence: 359
+WARNING! C131 not allowed! score: 0.02 median: 2.78 # of sequence: 359
+WARNING! T174 not allowed! score: 0.02 median: 2.78 # of sequence: 359
+WARNING! I197 not allowed! score: 0.04 median: 2.78 # of sequence: 359
+WARNING! Q199 not allowed! score: 0.03 median: 2.75 # of sequence: 337
+WARNING! T200 not allowed! score: 0.02 median: 2.78 # of sequence: 357
+WARNING! E231 not allowed! score: 0.01 median: 2.78 # of sequence: 359
+WARNING! H249 not allowed! score: 0.01 median: 2.78 # of sequence: 358
+WARNING! M253 not allowed! score: 0.04 median: 2.78 # of sequence: 358
+NM_001001922.2  H253N :
+WARNING! F46 not allowed! score: 0.01 median: 2.76 # of sequence: 377
+WARNING! H65 not allowed! score: 0.05 median: 2.76 # of sequence: 379
+WARNING! F71 not allowed! score: 0.02 median: 2.76 # of sequence: 379
+WARNING! A74 not allowed! score: 0.01 median: 2.78 # of sequence: 376
+WARNING! T82 not allowed! score: 0.03 median: 2.76 # of sequence: 381
+WARNING! T144 not allowed! score: 0.02 median: 2.76 # of sequence: 381
+WARNING! E154 not allowed! score: 0.01 median: 2.76 # of sequence: 380
+WARNING! A234 not allowed! score: 0.01 median: 2.76 # of sequence: 381
+NM_153444.1  E84D :
+WARNING! L12 not allowed! score: 0.02 median: 2.79 # of sequence: 227
+WARNING! V88 not allowed! score: 0.02 median: 2.78 # of sequence: 237
+WARNING! V109 not allowed! score: 0.02 median: 2.78 # of sequence: 237
+WARNING! S137 not allowed! score: 0.02 median: 2.78 # of sequence: 237
+WARNING! I151 not allowed! score: 0.03 median: 2.78 # of sequence: 237
+WARNING! C213 not allowed! score: 0.01 median: 2.80 # of sequence: 236
+WARNING! H230 not allowed! score: 0.03 median: 2.78 # of sequence: 237
+WARNING! F260 not allowed! score: 0.01 median: 2.78 # of sequence: 237
+WARNING! L273 not allowed! score: 0.03 median: 2.78 # of sequence: 237
+NM_024662.3  E20V :
+WARNING! V163 not allowed! score: 0.02 median: 2.76 # of sequence: 117
+WARNING! Y461 not allowed! score: 0.02 median: 2.78 # of sequence: 106
+NM_001004726.1  F12C :
+WARNING! I10 not allowed! score: 0.02 median: 2.95 # of sequence: 391
+WARNING! V13 not allowed! score: 0.03 median: 2.95 # of sequence: 393
+WARNING! W19 not allowed! score: 0.04 median: 2.96 # of sequence: 394
+WARNING! V36 not allowed! score: 0.02 median: 2.96 # of sequence: 397
+WARNING! C72 not allowed! score: 0.04 median: 2.96 # of sequence: 399
+WARNING! M99 not allowed! score: 0.04 median: 2.96 # of sequence: 399
+WARNING! A110 not allowed! score: 0.01 median: 2.96 # of sequence: 399
+WARNING! M172 not allowed! score: 0.03 median: 2.96 # of sequence: 399
+WARNING! S194 not allowed! score: 0.04 median: 2.96 # of sequence: 399
+WARNING! F222 not allowed! score: 0.02 median: 2.96 # of sequence: 398
+WARNING! N227 not allowed! score: 0.03 median: 2.96 # of sequence: 397
+WARNING! D246 not allowed! score: 0.01 median: 2.96 # of sequence: 399
+WARNING! L254 not allowed! score: 0.04 median: 2.96 # of sequence: 399
+NM_001001960.1  S188T :
+WARNING! F39 not allowed! score: 0.03 median: 2.78 # of sequence: 298
+WARNING! T77 not allowed! score: 0.04 median: 2.78 # of sequence: 299
+WARNING! I127 not allowed! score: 0.03 median: 2.78 # of sequence: 299
+WARNING! M160 not allowed! score: 0.03 median: 2.78 # of sequence: 299
+WARNING! R189 not allowed! score: 0.02 median: 2.78 # of sequence: 299
+WARNING! E227 not allowed! score: 0.01 median: 2.78 # of sequence: 299
+WARNING! L238 not allowed! score: 0.05 median: 2.78 # of sequence: 299
+WARNING! S246 not allowed! score: 0.02 median: 2.78 # of sequence: 299
+WARNING! V282 not allowed! score: 0.02 median: 2.78 # of sequence: 299
+NM_001005492.1  K298T :
+WARNING! R41 not allowed! score: 0.01 median: 2.74 # of sequence: 278
+WARNING! L62 not allowed! score: 0.02 median: 2.74 # of sequence: 278
+WARNING! W149 not allowed! score: 0.03 median: 2.74 # of sequence: 278
+WARNING! R164 not allowed! score: 0.02 median: 2.74 # of sequence: 278
+WARNING! L171 not allowed! score: 0.04 median: 2.76 # of sequence: 268
+WARNING! S183 not allowed! score: 0.04 median: 2.74 # of sequence: 278
+WARNING! S225 not allowed! score: 0.01 median: 2.74 # of sequence: 278
+WARNING! Q236 not allowed! score: 0.01 median: 2.74 # of sequence: 278
+WARNING! F267 not allowed! score: 0.02 median: 2.74 # of sequence: 278
+WARNING! M276 not allowed! score: 0.02 median: 2.74 # of sequence: 278
+WARNING! G281 not allowed! score: 0.02 median: 2.74 # of sequence: 278
+WARNING! L287 not allowed! score: 0.01 median: 2.74 # of sequence: 278
+WARNING! H290 not allowed! score: 0.01 median: 2.74 # of sequence: 278
+NM_001620.3  I3322M :
+WARNING! G1949 not allowed! score: 0.05 median: 2.77 # of sequence: 20
+WARNING! G2413 not allowed! score: 0.04 median: 2.77 # of sequence: 23
+WARNING! G5698 not allowed! score: 0.04 median: 3.07 # of sequence: 14
+NM_015399.4  L145Q :
+WARNING! C126 not allowed! score: 0.04 median: 2.77 # of sequence: 47
+NM_002335.4  T1014I :
+WARNING! P961 not allowed! score: 0.03 median: 2.78 # of sequence: 41
+NM_001008781.2  N2810H :
+WARNING! Y589 not allowed! score: 0.04 median: 2.77 # of sequence: 33
+WARNING! M789 not allowed! score: 0.03 median: 2.78 # of sequence: 31
+WARNING! A1102 not allowed! score: 0.04 median: 2.78 # of sequence: 31
+WARNING! C1626 not allowed! score: 0.04 median: 2.77 # of sequence: 35
+WARNING! S2366 not allowed! score: 0.04 median: 2.77 # of sequence: 34
+WARNING! W2949 not allowed! score: 0.05 median: 2.77 # of sequence: 35
+NM_001377.3  H4175P :
+WARNING! F344 not allowed! score: 0.05 median: 2.81 # of sequence: 23
+WARNING! W3624 not allowed! score: 0.05 median: 2.78 # of sequence: 22
+WARNING! Q4297 not allowed! score: 0.04 median: 2.78 # of sequence: 22
+NM_019055.6  I512S :
+WARNING! W162 not allowed! score: 0.05 median: 3.02 # of sequence: 37
+WARNING! W315 not allowed! score: 0.03 median: 2.79 # of sequence: 49
+WARNING! C474 not allowed! score: 0.04 median: 2.78 # of sequence: 47
+WARNING! P822 not allowed! score: 0.04 median: 3.09 # of sequence: 22
+NM_033360.4  G12V :
+WARNING! R151 not allowed! score: 0.03 median: 2.77 # of sequence: 288
+NM_013254.4  Q553E :
+WARNING! H7 not allowed! score: 0.04 median: 2.75 # of sequence: 29
+WARNING! R222 not allowed! score: 0.04 median: 2.76 # of sequence: 34
+NM_001031701.3  K355E :
+WARNING! N231 not allowed! score: 0.03 median: 2.75 # of sequence: 61
+NM_006475.3  Q836R :
+WARNING! M89 not allowed! score: 0.05 median: 2.87 # of sequence: 42
+NM_017769.5  T312I :
+WARNING! C23 not allowed! score: 0.05 median: 2.77 # of sequence: 52
+NM_001368142.1  A262T :
+WARNING! W235 not allowed! score: 0.03 median: 2.83 # of sequence: 32
+NM_152446.5  S69G :
+WARNING! W348 not allowed! score: 0.04 median: 3.17 # of sequence: 20
+NM_152446.5  K1024N :
+WARNING! W348 not allowed! score: 0.04 median: 3.17 # of sequence: 20
+NM_152446.5  H1012D :
+WARNING! W348 not allowed! score: 0.04 median: 3.17 # of sequence: 20
+NM_001080414.4  R629W :
+WARNING! W571 not allowed! score: 0.05 median: 2.86 # of sequence: 44
+NM_001080414.4  K867E :
+WARNING! W571 not allowed! score: 0.05 median: 2.86 # of sequence: 44
+NM_138420.4  G2664C :
+WARNING! G977 not allowed! score: 0.05 median: 2.78 # of sequence: 13
+WARNING! W979 not allowed! score: 0.04 median: 2.81 # of sequence: 12
+WARNING! W2464 not allowed! score: 0.04 median: 2.97 # of sequence: 7
+NM_138420.4  L1032V :
+WARNING! G977 not allowed! score: 0.05 median: 2.78 # of sequence: 13
+WARNING! W979 not allowed! score: 0.04 median: 2.81 # of sequence: 12
+WARNING! W2464 not allowed! score: 0.04 median: 2.97 # of sequence: 7
+NM_138420.4  M4647R :
+WARNING! G977 not allowed! score: 0.05 median: 2.78 # of sequence: 13
+WARNING! W979 not allowed! score: 0.04 median: 2.81 # of sequence: 12
+WARNING! W2464 not allowed! score: 0.04 median: 2.97 # of sequence: 7
+NM_001036.5  A371D :
+WARNING! I600 not allowed! score: 0.04 median: 2.89 # of sequence: 139
+WARNING! S2153 not allowed! score: 0.05 median: 2.90 # of sequence: 91
+WARNING! C2875 not allowed! score: 0.03 median: 2.92 # of sequence: 90
+WARNING! G2902 not allowed! score: 0.02 median: 2.92 # of sequence: 88
+NM_001128608.2  L1296V :
+WARNING! C486 not allowed! score: 0.02 median: 2.73 # of sequence: 45
+NM_003502.4  T656S :
+WARNING! Q323 not allowed! score: 0.05 median: 2.87 # of sequence: 40
+NM_002474.3  P517T :
+WARNING! K1845 not allowed! score: 0.05 median: 2.81 # of sequence: 74
+NM_015202.4  K8E :
+WARNING! H567 not allowed! score: 0.05 median: 3.04 # of sequence: 25
+WARNING! W577 not allowed! score: 0.03 median: 2.96 # of sequence: 26
+WARNING! P730 not allowed! score: 0.04 median: 2.91 # of sequence: 27
+WARNING! A1267 not allowed! score: 0.05 median: 2.75 # of sequence: 38
+NM_000632.4  K830N :
+WARNING! S367 not allowed! score: 0.05 median: 2.84 # of sequence: 50
+WARNING! N469 not allowed! score: 0.05 median: 2.85 # of sequence: 52
+WARNING! I623 not allowed! score: 0.05 median: 2.85 # of sequence: 55
+WARNING! D825 not allowed! score: 0.04 median: 2.85 # of sequence: 54
+WARNING! G933 not allowed! score: 0.02 median: 3.01 # of sequence: 45
+WARNING! A1045 not allowed! score: 0.04 median: 2.87 # of sequence: 47
+WARNING! G1086 not allowed! score: 0.05 median: 2.87 # of sequence: 46
+NM_001270974.2  I1447V :
+WARNING! C70 not allowed! score: 0.05 median: 3.04 # of sequence: 20
+WARNING! F654 not allowed! score: 0.03 median: 2.98 # of sequence: 22
+WARNING! Q1770 not allowed! score: 0.04 median: 2.89 # of sequence: 21
+WARNING! W2548 not allowed! score: 0.03 median: 3.05 # of sequence: 18
+WARNING! C4223 not allowed! score: 0.02 median: 2.87 # of sequence: 22
+NM_001270974.2  N2895K :
+WARNING! C70 not allowed! score: 0.05 median: 3.04 # of sequence: 20
+WARNING! F654 not allowed! score: 0.03 median: 2.98 # of sequence: 22
+WARNING! Q1770 not allowed! score: 0.04 median: 2.89 # of sequence: 21
+WARNING! W2548 not allowed! score: 0.03 median: 3.05 # of sequence: 18
+WARNING! C4223 not allowed! score: 0.02 median: 2.87 # of sequence: 22
+NM_002661.5  G363W :
+WARNING! S486 not allowed! score: 0.05 median: 2.78 # of sequence: 49
+WARNING! S724 not allowed! score: 0.04 median: 2.78 # of sequence: 50
+NM_182531.4  D425V :
+WARNING! R539 not allowed! score: 0.05 median: 2.76 # of sequence: 25
+NM_001409.4  T1459N :
+WARNING! R1079 not allowed! score: 0.04 median: 2.78 # of sequence: 37
+WARNING! R1082 not allowed! score: 0.05 median: 2.78 # of sequence: 37
+NM_014874.4  E436K :
+WARNING! A157 not allowed! score: 0.04 median: 2.84 # of sequence: 44
+NM_020765.3  I4254M :
+WARNING! W764 not allowed! score: 0.04 median: 2.99 # of sequence: 24
+WARNING! W891 not allowed! score: 0.02 median: 2.91 # of sequence: 23
+NM_020765.3  R2536C :
+WARNING! W764 not allowed! score: 0.04 median: 2.99 # of sequence: 24
+WARNING! W891 not allowed! score: 0.02 median: 2.91 # of sequence: 23
+NM_000546.5  C176W :
+WARNING! M133 not allowed! score: 0.05 median: 2.77 # of sequence: 90
+WARNING! W146 not allowed! score: 0.03 median: 2.77 # of sequence: 90
+NM_021628.2  A586T :
+WARNING! T547 not allowed! score: 0.02 median: 2.79 # of sequence: 57
+NM_001372.4  L800I :
+WARNING! E178 not allowed! score: 0.04 median: 2.79 # of sequence: 71
+WARNING! I314 not allowed! score: 0.04 median: 2.77 # of sequence: 75
+WARNING! G463 not allowed! score: 0.02 median: 2.77 # of sequence: 75
+WARNING! S498 not allowed! score: 0.05 median: 2.77 # of sequence: 75
+WARNING! Y502 not allowed! score: 0.03 median: 2.77 # of sequence: 75
+WARNING! I694 not allowed! score: 0.03 median: 2.79 # of sequence: 72
+WARNING! T828 not allowed! score: 0.04 median: 2.78 # of sequence: 74
+WARNING! V1060 not allowed! score: 0.04 median: 2.79 # of sequence: 74
+WARNING! W1238 not allowed! score: 0.03 median: 2.78 # of sequence: 81
+WARNING! W1364 not allowed! score: 0.04 median: 2.78 # of sequence: 79
+WARNING! W1952 not allowed! score: 0.03 median: 2.78 # of sequence: 86
+WARNING! S1988 not allowed! score: 0.04 median: 2.78 # of sequence: 87
+WARNING! G2199 not allowed! score: 0.02 median: 2.78 # of sequence: 87
+WARNING! K2263 not allowed! score: 0.04 median: 2.78 # of sequence: 87
+WARNING! V2614 not allowed! score: 0.04 median: 2.78 # of sequence: 87
+WARNING! I2629 not allowed! score: 0.03 median: 2.78 # of sequence: 87
+WARNING! G2670 not allowed! score: 0.03 median: 2.77 # of sequence: 86
+WARNING! W2701 not allowed! score: 0.03 median: 2.83 # of sequence: 74
+WARNING! H2979 not allowed! score: 0.02 median: 2.78 # of sequence: 87
+WARNING! H3058 not allowed! score: 0.02 median: 2.78 # of sequence: 87
+WARNING! A3422 not allowed! score: 0.03 median: 2.78 # of sequence: 87
+WARNING! E3637 not allowed! score: 0.05 median: 2.78 # of sequence: 84
+WARNING! G4132 not allowed! score: 0.02 median: 2.78 # of sequence: 80
+WARNING! G4260 not allowed! score: 0.03 median: 2.78 # of sequence: 80
+WARNING! M4380 not allowed! score: 0.02 median: 2.78 # of sequence: 80
+WARNING! S4447 not allowed! score: 0.02 median: 2.78 # of sequence: 81
+WARNING! S4454 not allowed! score: 0.04 median: 2.78 # of sequence: 80
+NM_001045.6  V281M :
+WARNING! G476 not allowed! score: 0.03 median: 2.77 # of sequence: 81
+NM_032559.5  C395R :
+WARNING! Y54 not allowed! score: 0.05 median: 2.85 # of sequence: 91
+WARNING! Q260 not allowed! score: 0.02 median: 2.82 # of sequence: 116
+WARNING! R414 not allowed! score: 0.04 median: 2.81 # of sequence: 117
+WARNING! P417 not allowed! score: 0.03 median: 2.81 # of sequence: 117
+WARNING! L483 not allowed! score: 0.03 median: 2.81 # of sequence: 115
+WARNING! L501 not allowed! score: 0.04 median: 2.81 # of sequence: 115
+WARNING! K542 not allowed! score: 0.02 median: 2.81 # of sequence: 108
+NM_022066.4  T1052K :
+WARNING! W196 not allowed! score: 0.04 median: 2.86 # of sequence: 20
+WARNING! I1011 not allowed! score: 0.03 median: 2.83 # of sequence: 25
+NM_173628.4  K3524Q :
+WARNING! D316 not allowed! score: 0.03 median: 2.78 # of sequence: 68
+WARNING! F320 not allowed! score: 0.05 median: 2.78 # of sequence: 68
+WARNING! I337 not allowed! score: 0.05 median: 2.78 # of sequence: 68
+WARNING! V464 not allowed! score: 0.05 median: 2.78 # of sequence: 68
+WARNING! M532 not allowed! score: 0.05 median: 2.79 # of sequence: 67
+WARNING! A1416 not allowed! score: 0.05 median: 2.78 # of sequence: 80
+WARNING! M1751 not allowed! score: 0.05 median: 2.78 # of sequence: 83
+WARNING! H2547 not allowed! score: 0.05 median: 2.78 # of sequence: 84
+WARNING! L2705 not allowed! score: 0.05 median: 2.78 # of sequence: 83
+WARNING! A2848 not allowed! score: 0.05 median: 2.78 # of sequence: 84
+WARNING! Q2900 not allowed! score: 0.04 median: 2.78 # of sequence: 84
+WARNING! A3091 not allowed! score: 0.04 median: 2.80 # of sequence: 82
+WARNING! R3457 not allowed! score: 0.03 median: 2.79 # of sequence: 82
+WARNING! Y3533 not allowed! score: 0.04 median: 2.79 # of sequence: 82
+WARNING! S3874 not allowed! score: 0.03 median: 2.79 # of sequence: 78
+WARNING! L4008 not allowed! score: 0.04 median: 2.78 # of sequence: 75
+WARNING! M4026 not allowed! score: 0.02 median: 2.79 # of sequence: 78
+WARNING! T4113 not allowed! score: 0.05 median: 2.78 # of sequence: 77
+WARNING! M4416 not allowed! score: 0.05 median: 2.78 # of sequence: 77
+WARNING! A4455 not allowed! score: 0.04 median: 2.78 # of sequence: 77
+NM_001366230.1  D229E :
+WARNING! D164 not allowed! score: 0.04 median: 2.86 # of sequence: 35
+NM_145287.4  L105W :
+WARNING! I160 not allowed! score: 0.05 median: 2.73 # of sequence: 119
+WARNING! N182 not allowed! score: 0.02 median: 2.76 # of sequence: 148
+WARNING! P199 not allowed! score: 0.03 median: 2.75 # of sequence: 143
+WARNING! I204 not allowed! score: 0.04 median: 2.76 # of sequence: 146
+WARNING! Q205 not allowed! score: 0.03 median: 2.76 # of sequence: 147
+WARNING! N210 not allowed! score: 0.02 median: 2.76 # of sequence: 147
+WARNING! S211 not allowed! score: 0.02 median: 2.76 # of sequence: 147
+WARNING! E216 not allowed! score: 0.02 median: 2.76 # of sequence: 147
+WARNING! S218 not allowed! score: 0.03 median: 2.76 # of sequence: 147
+WARNING! S235 not allowed! score: 0.03 median: 2.76 # of sequence: 146
+WARNING! Q237 not allowed! score: 0.03 median: 2.76 # of sequence: 146
+WARNING! I244 not allowed! score: 0.03 median: 2.76 # of sequence: 145
+WARNING! K253 not allowed! score: 0.04 median: 2.76 # of sequence: 145
+WARNING! N259 not allowed! score: 0.02 median: 2.77 # of sequence: 147
+WARNING! S264 not allowed! score: 0.02 median: 2.77 # of sequence: 150
+WARNING! V265 not allowed! score: 0.02 median: 2.77 # of sequence: 150
+WARNING! R270 not allowed! score: 0.02 median: 2.78 # of sequence: 151
+WARNING! F348 not allowed! score: 0.03 median: 2.78 # of sequence: 151
+WARNING! F376 not allowed! score: 0.04 median: 2.78 # of sequence: 151
+WARNING! V391 not allowed! score: 0.03 median: 2.78 # of sequence: 151
+WARNING! M397 not allowed! score: 0.03 median: 2.78 # of sequence: 151
+WARNING! F404 not allowed! score: 0.03 median: 2.78 # of sequence: 151
+WARNING! H431 not allowed! score: 0.03 median: 2.78 # of sequence: 151
+WARNING! F460 not allowed! score: 0.04 median: 2.76 # of sequence: 150
+WARNING! F487 not allowed! score: 0.02 median: 2.77 # of sequence: 150
+NM_019112.4  V950L :
+WARNING! M247 not allowed! score: 0.03 median: 3.06 # of sequence: 52
+WARNING! M330 not allowed! score: 0.03 median: 2.83 # of sequence: 64
+WARNING! T563 not allowed! score: 0.03 median: 2.79 # of sequence: 70
+WARNING! D579 not allowed! score: 0.03 median: 2.79 # of sequence: 71
+WARNING! R722 not allowed! score: 0.04 median: 2.79 # of sequence: 70
+WARNING! W1085 not allowed! score: 0.04 median: 2.79 # of sequence: 79
+WARNING! H1109 not allowed! score: 0.04 median: 2.78 # of sequence: 77
+WARNING! L1867 not allowed! score: 0.03 median: 2.84 # of sequence: 77
+WARNING! L1891 not allowed! score: 0.03 median: 2.78 # of sequence: 78
+WARNING! M1979 not allowed! score: 0.02 median: 2.80 # of sequence: 75
+WARNING! S1993 not allowed! score: 0.04 median: 2.80 # of sequence: 76
+WARNING! A2017 not allowed! score: 0.03 median: 2.80 # of sequence: 76
+WARNING! M2092 not allowed! score: 0.02 median: 2.80 # of sequence: 76
+NM_001974.5  F494L :
+WARNING! K862 not allowed! score: 0.05 median: 2.82 # of sequence: 32
+NM_002566.5  F107C :
+WARNING! W32 not allowed! score: 0.03 median: 2.80 # of sequence: 34
+WARNING! P84 not allowed! score: 0.04 median: 2.77 # of sequence: 39
+WARNING! G153 not allowed! score: 0.04 median: 2.77 # of sequence: 39
+WARNING! G229 not allowed! score: 0.04 median: 2.77 # of sequence: 38
+NM_000896.3  R488S :
+WARNING! M87 not allowed! score: 0.03 median: 2.76 # of sequence: 133
+WARNING! K448 not allowed! score: 0.04 median: 2.75 # of sequence: 148
+WARNING! G483 not allowed! score: 0.05 median: 2.74 # of sequence: 141
+NM_021267.5  P131Q :
+WARNING! W253 not allowed! score: 0.02 median: 2.80 # of sequence: 21
+NM_175910.7  R297I :
+WARNING! Q134 not allowed! score: 0.04 median: 2.76 # of sequence: 134
+WARNING! T144 not allowed! score: 0.01 median: 2.76 # of sequence: 134
+WARNING! Y170 not allowed! score: 0.02 median: 2.76 # of sequence: 134
+WARNING! P208 not allowed! score: 0.01 median: 2.76 # of sequence: 134
+WARNING! E217 not allowed! score: 0.05 median: 2.76 # of sequence: 134
+WARNING! H221 not allowed! score: 0.03 median: 2.76 # of sequence: 134
+WARNING! Y226 not allowed! score: 0.03 median: 2.76 # of sequence: 134
+WARNING! C227 not allowed! score: 0.01 median: 2.76 # of sequence: 134
+WARNING! Y230 not allowed! score: 0.05 median: 2.76 # of sequence: 134
+WARNING! E357 not allowed! score: 0.05 median: 2.76 # of sequence: 134
+WARNING! M409 not allowed! score: 0.04 median: 2.76 # of sequence: 134
+WARNING! H442 not allowed! score: 0.01 median: 2.76 # of sequence: 134
+WARNING! D469 not allowed! score: 0.03 median: 2.76 # of sequence: 134
+WARNING! V525 not allowed! score: 0.03 median: 2.76 # of sequence: 134
+WARNING! E553 not allowed! score: 0.04 median: 2.76 # of sequence: 134
+NM_003423.4.2  K782N :
+WARNING! C14 not allowed! score: 0.02 median: 2.75 # of sequence: 82
+WARNING! P187 not allowed! score: 0.05 median: 2.75 # of sequence: 85
+WARNING! C202 not allowed! score: 0.05 median: 2.75 # of sequence: 83
+WARNING! I217 not allowed! score: 0.02 median: 2.75 # of sequence: 86
+WARNING! N251 not allowed! score: 0.04 median: 2.76 # of sequence: 86
+WARNING! Y255 not allowed! score: 0.01 median: 2.79 # of sequence: 86
+WARNING! R280 not allowed! score: 0.02 median: 2.75 # of sequence: 87
+WARNING! F285 not allowed! score: 0.03 median: 2.75 # of sequence: 87
+WARNING! A292 not allowed! score: 0.02 median: 2.75 # of sequence: 87
+WARNING! P309 not allowed! score: 0.02 median: 2.75 # of sequence: 87
+WARNING! A366 not allowed! score: 0.02 median: 2.75 # of sequence: 87
+WARNING! F369 not allowed! score: 0.01 median: 2.75 # of sequence: 87
+WARNING! E377 not allowed! score: 0.02 median: 2.75 # of sequence: 87
+WARNING! A478 not allowed! score: 0.04 median: 2.75 # of sequence: 87
+WARNING! I505 not allowed! score: 0.03 median: 2.75 # of sequence: 86
+WARNING! F593 not allowed! score: 0.05 median: 2.74 # of sequence: 81
+WARNING! Q732 not allowed! score: 0.03 median: 2.72 # of sequence: 71
+WARNING! Q760 not allowed! score: 0.02 median: 2.72 # of sequence: 68
+NM_007153.3  F1268C :
+WARNING! A222 not allowed! score: 0.04 median: 2.75 # of sequence: 69
+WARNING! Y378 not allowed! score: 0.04 median: 2.76 # of sequence: 70
+WARNING! T451 not allowed! score: 0.02 median: 2.76 # of sequence: 70
+WARNING! N476 not allowed! score: 0.02 median: 2.76 # of sequence: 70
+WARNING! Y562 not allowed! score: 0.04 median: 2.75 # of sequence: 63
+WARNING! V577 not allowed! score: 0.03 median: 2.74 # of sequence: 62
+WARNING! V773 not allowed! score: 0.03 median: 2.76 # of sequence: 70
+WARNING! D801 not allowed! score: 0.03 median: 2.77 # of sequence: 69
+WARNING! Y870 not allowed! score: 0.02 median: 2.76 # of sequence: 70
+WARNING! F944 not allowed! score: 0.02 median: 2.78 # of sequence: 69
+WARNING! T1027 not allowed! score: 0.02 median: 2.75 # of sequence: 66
+WARNING! E1083 not allowed! score: 0.02 median: 2.74 # of sequence: 59
+NM_001242680.2  G1054C :
+WARNING! V33 not allowed! score: 0.04 median: 2.79 # of sequence: 57
+WARNING! N243 not allowed! score: 0.05 median: 2.77 # of sequence: 66
+WARNING! T262 not allowed! score: 0.02 median: 2.77 # of sequence: 66
+WARNING! R350 not allowed! score: 0.03 median: 2.77 # of sequence: 66
+WARNING! A904 not allowed! score: 0.04 median: 2.77 # of sequence: 66
+WARNING! C908 not allowed! score: 0.02 median: 2.77 # of sequence: 66
+WARNING! D1000 not allowed! score: 0.04 median: 2.77 # of sequence: 66
+WARNING! V1026 not allowed! score: 0.01 median: 2.76 # of sequence: 65
+WARNING! C1076 not allowed! score: 0.03 median: 2.75 # of sequence: 62
+WARNING! K1101 not allowed! score: 0.03 median: 2.75 # of sequence: 63
+WARNING! T1216 not allowed! score: 0.05 median: 2.83 # of sequence: 29
+WARNING! V1218 not allowed! score: 0.03 median: 2.84 # of sequence: 28
+WARNING! V1221 not allowed! score: 0.03 median: 2.84 # of sequence: 28
+WARNING! P1222 not allowed! score: 0.05 median: 2.84 # of sequence: 28
+NM_152484.3  Y242F :
+WARNING! Y233 not allowed! score: 0.03 median: 2.75 # of sequence: 48
+NM_000540.3  V3748G :
+WARNING! M149 not allowed! score: 0.03 median: 2.83 # of sequence: 141
+WARNING! H404 not allowed! score: 0.04 median: 2.83 # of sequence: 114
+WARNING! T655 not allowed! score: 0.04 median: 2.86 # of sequence: 87
+WARNING! T671 not allowed! score: 0.03 median: 2.88 # of sequence: 83
+WARNING! A1449 not allowed! score: 0.01 median: 2.90 # of sequence: 75
+WARNING! S1985 not allowed! score: 0.05 median: 2.90 # of sequence: 82
+WARNING! C3014 not allowed! score: 0.03 median: 2.88 # of sequence: 88
+WARNING! Q3355 not allowed! score: 0.04 median: 2.88 # of sequence: 91
+NM_001042544.1  G940R :
+WARNING! P449 not allowed! score: 0.05 median: 2.77 # of sequence: 39
+WARNING! W1203 not allowed! score: 0.04 median: 2.78 # of sequence: 42
+NM_013361.6  P427S :
+WARNING! L217 not allowed! score: 0.04 median: 2.77 # of sequence: 52
+WARNING! H259 not allowed! score: 0.02 median: 2.77 # of sequence: 52
+WARNING! V295 not allowed! score: 0.02 median: 2.77 # of sequence: 52
+WARNING! K313 not allowed! score: 0.02 median: 2.77 # of sequence: 52
+WARNING! A393 not allowed! score: 0.03 median: 2.77 # of sequence: 52
+WARNING! R443 not allowed! score: 0.05 median: 2.77 # of sequence: 51
+WARNING! N449 not allowed! score: 0.04 median: 2.77 # of sequence: 51
+NM_005282.3  V46A :
+WARNING! P152 not allowed! score: 0.04 median: 2.76 # of sequence: 41
+WARNING! W180 not allowed! score: 0.04 median: 2.76 # of sequence: 41
+NM_012315.2  G221C :
+WARNING! M141 not allowed! score: 0.03 median: 2.80 # of sequence: 62
+NM_032423.3  V221F :
+WARNING! K9 not allowed! score: 0.03 median: 2.75 # of sequence: 46
+WARNING! Q193 not allowed! score: 0.04 median: 2.77 # of sequence: 47
+WARNING! N211 not allowed! score: 0.03 median: 2.75 # of sequence: 50
+WARNING! S326 not allowed! score: 0.03 median: 2.76 # of sequence: 53
+WARNING! R378 not allowed! score: 0.04 median: 2.76 # of sequence: 53
+WARNING! C394 not allowed! score: 0.03 median: 2.76 # of sequence: 53
+WARNING! G410 not allowed! score: 0.03 median: 2.76 # of sequence: 53
+WARNING! D433 not allowed! score: 0.03 median: 2.76 # of sequence: 53
+WARNING! T444 not allowed! score: 0.02 median: 2.76 # of sequence: 53
+WARNING! R550 not allowed! score: 0.04 median: 2.76 # of sequence: 53
+WARNING! K574 not allowed! score: 0.03 median: 2.76 # of sequence: 53
+WARNING! E578 not allowed! score: 0.04 median: 2.76 # of sequence: 53
+NM_153447.4  G307V :
+WARNING! W275 not allowed! score: 0.04 median: 2.77 # of sequence: 20
+NM_213598.4  A3T :
+WARNING! C42 not allowed! score: 0.04 median: 2.72 # of sequence: 50
+WARNING! M46 not allowed! score: 0.04 median: 2.72 # of sequence: 50
+WARNING! D62 not allowed! score: 0.05 median: 2.73 # of sequence: 50
+WARNING! Q223 not allowed! score: 0.03 median: 2.73 # of sequence: 52
+WARNING! W356 not allowed! score: 0.05 median: 2.73 # of sequence: 53
+WARNING! Q499 not allowed! score: 0.04 median: 2.75 # of sequence: 49
+NM_173631.3  L46F :
+WARNING! H27 not allowed! score: 0.04 median: 2.75 # of sequence: 91
+WARNING! C369 not allowed! score: 0.05 median: 2.76 # of sequence: 89
+WARNING! T372 not allowed! score: 0.04 median: 2.76 # of sequence: 89
+WARNING! A376 not allowed! score: 0.03 median: 2.76 # of sequence: 89
+NM_005762.3  G414S :
+WARNING! Q342 not allowed! score: 0.05 median: 2.75 # of sequence: 56
+WARNING! P716 not allowed! score: 0.04 median: 2.78 # of sequence: 40
+NM_194248.3  A1053S :
+WARNING! D1159 not allowed! score: 0.04 median: 2.78 # of sequence: 45
+WARNING! W1964 not allowed! score: 0.04 median: 2.78 # of sequence: 43
+NM_003128.3  Q914L :
+WARNING! V551 not allowed! score: 0.04 median: 2.80 # of sequence: 61
+WARNING! Y721 not allowed! score: 0.04 median: 2.82 # of sequence: 60
+WARNING! F1818 not allowed! score: 0.04 median: 2.80 # of sequence: 58
+NM_018557.3  E1331G :
+WARNING! G395 not allowed! score: 0.05 median: 2.83 # of sequence: 26
+WARNING! C2020 not allowed! score: 0.04 median: 2.89 # of sequence: 24
+WARNING! W2722 not allowed! score: 0.03 median: 2.84 # of sequence: 24
+NM_177454.4  N792S :
+WARNING! P332 not allowed! score: 0.05 median: 2.82 # of sequence: 28
+WARNING! G369 not allowed! score: 0.04 median: 2.77 # of sequence: 30
+WARNING! C376 not allowed! score: 0.04 median: 2.77 # of sequence: 30
+NM_005235.3  G107V :
+WARNING! F279 not allowed! score: 0.05 median: 2.78 # of sequence: 69
+WARNING! I384 not allowed! score: 0.05 median: 2.77 # of sequence: 71
+WARNING! W638 not allowed! score: 0.02 median: 2.99 # of sequence: 36
+NM_024503.5  I86V :
+WARNING! P1380 not allowed! score: 0.04 median: 3.04 # of sequence: 32
+NM_006845.4  Y374C :
+WARNING! L409 not allowed! score: 0.05 median: 2.78 # of sequence: 79
+NM_001367561.1  H622Y :
+WARNING! T323 not allowed! score: 0.05 median: 2.84 # of sequence: 64
+WARNING! I801 not allowed! score: 0.04 median: 2.78 # of sequence: 64
+NM_198719.2  G205W :
+WARNING! W94 not allowed! score: 0.03 median: 2.82 # of sequence: 55
+WARNING! H163 not allowed! score: 0.02 median: 2.82 # of sequence: 55
+NM_015311.3  Q1517H :
+WARNING! E278 not allowed! score: 0.02 median: 2.81 # of sequence: 20
+WARNING! W281 not allowed! score: 0.04 median: 2.81 # of sequence: 20
+WARNING! G459 not allowed! score: 0.04 median: 2.76 # of sequence: 26
+WARNING! C1006 not allowed! score: 0.04 median: 2.77 # of sequence: 22
+NM_001371304.1  D147E :
+WARNING! H298 not allowed! score: 0.03 median: 3.13 # of sequence: 36
+WARNING! M545 not allowed! score: 0.04 median: 2.85 # of sequence: 36
+WARNING! W698 not allowed! score: 0.03 median: 2.84 # of sequence: 38
+NM_130794.2  S33I :
+WARNING! W91 not allowed! score: 0.04 median: 2.77 # of sequence: 23
+NM_032501.4  T438S :
+WARNING! M300 not allowed! score: 0.05 median: 2.76 # of sequence: 396
+WARNING! C422 not allowed! score: 0.04 median: 2.78 # of sequence: 396
+NM_002862.4  M148V :
+WARNING! A406 not allowed! score: 0.04 median: 2.76 # of sequence: 191
+WARNING! T503 not allowed! score: 0.02 median: 2.76 # of sequence: 190
+NM_015474.3  G289R :
+WARNING! C177 not allowed! score: 0.03 median: 2.81 # of sequence: 39
+NM_015474.3  R55M :
+WARNING! C177 not allowed! score: 0.03 median: 2.81 # of sequence: 39
+NM_014657.3  V699L :
+WARNING! C618 not allowed! score: 0.04 median: 2.93 # of sequence: 19
+NM_001029864.2  P1094S :
+WARNING! C118 not allowed! score: 0.03 median: 2.83 # of sequence: 25
+WARNING! H720 not allowed! score: 0.04 median: 2.79 # of sequence: 28
+NM_022896.2  Q758L :
+WARNING! L69 not allowed! score: 0.02 median: 2.77 # of sequence: 60
+NM_001164116.2  A271P :
+WARNING! G400 not allowed! score: 0.05 median: 2.77 # of sequence: 26
+NM_001037335.2  R329C :
+WARNING! G1920 not allowed! score: 0.04 median: 2.84 # of sequence: 21
+NM_004535.3  S38A :
+WARNING! M372 not allowed! score: 0.04 median: 3.11 # of sequence: 51
+NM_032608.7  G330C :
+WARNING! W661 not allowed! score: 0.05 median: 2.76 # of sequence: 213
+NM_032608.7  G330V :
+WARNING! W661 not allowed! score: 0.05 median: 2.76 # of sequence: 213
+NM_015374.3  R190C :
+WARNING! M684 not allowed! score: 0.04 median: 2.77 # of sequence: 32
+NM_004711.5  A127T :
+WARNING! P17 not allowed! score: 0.03 median: 2.76 # of sequence: 47
+NM_014461.4  V641L :
+WARNING! S300 not allowed! score: 0.03 median: 2.74 # of sequence: 76
+NM_016453.4  R602C :
+WARNING! H498 not allowed! score: 0.02 median: 2.82 # of sequence: 36
+NM_032505.3  V499L :
+WARNING! C383 not allowed! score: 0.04 median: 2.79 # of sequence: 25
+WARNING! C389 not allowed! score: 0.04 median: 2.79 # of sequence: 25
+NM_004487.5  K1455Q :
+WARNING! D2120 not allowed! score: 0.04 median: 2.86 # of sequence: 20
+WARNING! T2185 not allowed! score: 0.04 median: 2.79 # of sequence: 21
+WARNING! S2799 not allowed! score: 0.04 median: 3.04 # of sequence: 16
+NM_025246.3  Q32K :
+WARNING! S147 not allowed! score: 0.04 median: 2.83 # of sequence: 25
+NM_004488.2  A307D :
+WARNING! Q77 not allowed! score: 0.04 median: 2.80 # of sequence: 29
+WARNING! F225 not allowed! score: 0.04 median: 2.80 # of sequence: 29
+WARNING! W506 not allowed! score: 0.04 median: 3.03 # of sequence: 15
+NM_001195107.1  Q702R :
+WARNING! Y671 not allowed! score: 0.03 median: 2.79 # of sequence: 44
+WARNING! S679 not allowed! score: 0.04 median: 2.79 # of sequence: 44
+WARNING! V683 not allowed! score: 0.05 median: 2.79 # of sequence: 44
+WARNING! F710 not allowed! score: 0.03 median: 2.81 # of sequence: 43
+NM_025132.4  D355V :
+WARNING! Q925 not allowed! score: 0.04 median: 2.81 # of sequence: 36
+NM_000812.4  R167I :
+WARNING! G312 not allowed! score: 0.05 median: 2.78 # of sequence: 100
+NM_001347829.2  P6Q :
+WARNING! P937 not allowed! score: 0.03 median: 2.77 # of sequence: 40
+NM_025009.5  M725K :
+WARNING! N617 not allowed! score: 0.05 median: 2.84 # of sequence: 31
+NM_000477.7  G95E :
+WARNING! H63 not allowed! score: 0.04 median: 2.79 # of sequence: 33
+NM_139173.4  P91S :
+WARNING! G71 not allowed! score: 0.04 median: 2.87 # of sequence: 35
+NM_001101669.2  N835K :
+WARNING! Q771 not allowed! score: 0.05 median: 2.78 # of sequence: 46
+NM_018248.3  T469K :
+WARNING! M222 not allowed! score: 0.03 median: 2.75 # of sequence: 30
+NM_003966.3  P435R :
+WARNING! W580 not allowed! score: 0.03 median: 2.79 # of sequence: 50
+NM_153485.3  V75A :
+WARNING! C561 not allowed! score: 0.05 median: 2.80 # of sequence: 22
+WARNING! Q771 not allowed! score: 0.05 median: 2.80 # of sequence: 21
+NM_004385.5  S618C :
+WARNING! W1608 not allowed! score: 0.03 median: 3.10 # of sequence: 20
+WARNING! R1893 not allowed! score: 0.05 median: 3.11 # of sequence: 19
+WARNING! Y2806 not allowed! score: 0.03 median: 3.11 # of sequence: 19
+NM_022828.5  D855N :
+WARNING! S563 not allowed! score: 0.03 median: 2.91 # of sequence: 19
+NM_003687.4  T154P :
+WARNING! E254 not allowed! score: 0.03 median: 2.77 # of sequence: 46
+NM_014423.4  S795F :
+WARNING! D975 not allowed! score: 0.03 median: 2.79 # of sequence: 36
+NM_022159.4  D277Y :
+WARNING! C609 not allowed! score: 0.04 median: 2.82 # of sequence: 114
+NM_052941.5  T433R :
+WARNING! L101 not allowed! score: 0.03 median: 2.78 # of sequence: 109
+WARNING! P339 not allowed! score: 0.05 median: 2.78 # of sequence: 112
+WARNING! W459 not allowed! score: 0.02 median: 2.78 # of sequence: 108
+NM_213653.3  H166R :
+WARNING! M208 not allowed! score: 0.04 median: 2.81 # of sequence: 54
+NM_012208.4  A190T :
+WARNING! M93 not allowed! score: 0.03 median: 2.76 # of sequence: 132
+WARNING! M115 not allowed! score: 0.03 median: 2.76 # of sequence: 134
+NM_018908.3  K123M :
+WARNING! A121 not allowed! score: 0.02 median: 2.77 # of sequence: 168
+WARNING! R168 not allowed! score: 0.04 median: 2.76 # of sequence: 170
+WARNING! V211 not allowed! score: 0.04 median: 2.76 # of sequence: 170
+WARNING! F279 not allowed! score: 0.03 median: 2.77 # of sequence: 168
+WARNING! S325 not allowed! score: 0.04 median: 2.76 # of sequence: 171
+WARNING! T353 not allowed! score: 0.03 median: 2.76 # of sequence: 170
+WARNING! P598 not allowed! score: 0.05 median: 2.76 # of sequence: 168
+NM_018938.4  P133L :
+WARNING! M111 not allowed! score: 0.01 median: 2.74 # of sequence: 171
+WARNING! L154 not allowed! score: 0.02 median: 2.75 # of sequence: 177
+WARNING! V212 not allowed! score: 0.01 median: 2.75 # of sequence: 179
+WARNING! H243 not allowed! score: 0.04 median: 2.74 # of sequence: 178
+WARNING! G247 not allowed! score: 0.03 median: 2.75 # of sequence: 179
+WARNING! I268 not allowed! score: 0.05 median: 2.75 # of sequence: 180
+WARNING! S365 not allowed! score: 0.05 median: 2.74 # of sequence: 178
+WARNING! A421 not allowed! score: 0.03 median: 2.75 # of sequence: 179
+NM_018915.4  N165K :
+WARNING! R36 not allowed! score: 0.04 median: 2.76 # of sequence: 239
+WARNING! G574 not allowed! score: 0.02 median: 2.77 # of sequence: 238
+WARNING! I646 not allowed! score: 0.04 median: 2.75 # of sequence: 238
+NM_018916.4  R198W :
+WARNING! N50 not allowed! score: 0.04 median: 2.76 # of sequence: 266
+WARNING! N225 not allowed! score: 0.04 median: 2.76 # of sequence: 264
+WARNING! R364 not allowed! score: 0.04 median: 2.76 # of sequence: 265
+WARNING! V384 not allowed! score: 0.04 median: 2.76 # of sequence: 266
+WARNING! Q400 not allowed! score: 0.04 median: 2.76 # of sequence: 266
+NM_018924.5  I442V :
+WARNING! A36 not allowed! score: 0.05 median: 2.77 # of sequence: 241
+WARNING! F56 not allowed! score: 0.05 median: 2.75 # of sequence: 242
+WARNING! C224 not allowed! score: 0.04 median: 2.75 # of sequence: 242
+WARNING! H326 not allowed! score: 0.04 median: 2.75 # of sequence: 242
+WARNING! E636 not allowed! score: 0.04 median: 2.75 # of sequence: 241
+WARNING! Q652 not allowed! score: 0.02 median: 2.75 # of sequence: 242
+WARNING! M659 not allowed! score: 0.03 median: 2.75 # of sequence: 242
+WARNING! Q672 not allowed! score: 0.03 median: 2.79 # of sequence: 225
+WARNING! H691 not allowed! score: 0.04 median: 2.75 # of sequence: 241
+NM_003883.4  D391N :
+WARNING! I46 not allowed! score: 0.01 median: 2.76 # of sequence: 263
+NM_033449.3  R142W :
+WARNING! W28 not allowed! score: 0.03 median: 2.79 # of sequence: 26
+NM_001099293.3  L434P :
+WARNING! N531 not allowed! score: 0.04 median: 2.89 # of sequence: 26
+WARNING! H599 not allowed! score: 0.04 median: 2.88 # of sequence: 25
+WARNING! W1093 not allowed! score: 0.05 median: 2.88 # of sequence: 21
+NM_022897.5  P76A :
+WARNING! M83 not allowed! score: 0.05 median: 2.78 # of sequence: 40
+NM_001172638.1  D760Y :
+WARNING! R698 not allowed! score: 0.03 median: 2.77 # of sequence: 75
+WARNING! Q808 not allowed! score: 0.04 median: 2.81 # of sequence: 75
+NM_004332.4  S72N :
+WARNING! A236 not allowed! score: 0.02 median: 2.77 # of sequence: 51
+NM_001318872.1  R423W :
+WARNING! C334 not allowed! score: 0.02 median: 2.80 # of sequence: 59
+NM_006403.4  D630E :
+WARNING! V466 not allowed! score: 0.03 median: 2.78 # of sequence: 39
+NM_006778.4.3  R70Q :
+WARNING! N34 not allowed! score: 0.03 median: 2.84 # of sequence: 28
+WARNING! Q116 not allowed! score: 0.04 median: 2.83 # of sequence: 29
+WARNING! Q210 not allowed! score: 0.03 median: 2.83 # of sequence: 29
+WARNING! I360 not allowed! score: 0.03 median: 2.83 # of sequence: 29
+NM_005803.4.2  C34Y :
+WARNING! V265 not allowed! score: 0.04 median: 2.74 # of sequence: 110
+WARNING! A314 not allowed! score: 0.03 median: 2.74 # of sequence: 106
+NM_013993.2.5  M311V :
+WARNING! A842 not allowed! score: 0.05 median: 2.78 # of sequence: 41
+NM_004557.4.6  G426A :
+WARNING! W149 not allowed! score: 0.04 median: 2.75 # of sequence: 73
+WARNING! F159 not allowed! score: 0.03 median: 2.75 # of sequence: 73
+NM_001371.4  S1403Y :
+WARNING! Q1739 not allowed! score: 0.04 median: 2.78 # of sequence: 81
+WARNING! H3518 not allowed! score: 0.04 median: 2.78 # of sequence: 80
+NM_001098518.2  Q1216L :
+WARNING! S400 not allowed! score: 0.03 median: 3.03 # of sequence: 21
+NM_001098518.2  P1226Q :
+WARNING! S400 not allowed! score: 0.03 median: 3.03 # of sequence: 21
+NM_138733.5  N32K :
+WARNING! S308 not allowed! score: 0.03 median: 2.76 # of sequence: 239
+WARNING! H324 not allowed! score: 0.03 median: 2.76 # of sequence: 239
+NM_153699.1  V161L :
+WARNING! S15 not allowed! score: 0.01 median: 2.77 # of sequence: 109
+WARNING! L30 not allowed! score: 0.01 median: 2.73 # of sequence: 116
+NM_133493.5  G653V :
+WARNING! W1113 not allowed! score: 0.05 median: 2.82 # of sequence: 21
+NM_000865.3  N2K :
+WARNING! L41 not allowed! score: 0.04 median: 2.75 # of sequence: 54
+NM_000735.4  C31F :
+WARNING! Q74 not allowed! score: 0.05 median: 3.03 # of sequence: 48
+NM_001366307.2  H343Q :
+WARNING! Q127 not allowed! score: 0.02 median: 2.76 # of sequence: 186
+WARNING! F157 not allowed! score: 0.04 median: 2.76 # of sequence: 185
+WARNING! E209 not allowed! score: 0.01 median: 2.76 # of sequence: 185
+WARNING! N255 not allowed! score: 0.04 median: 2.76 # of sequence: 186
+WARNING! V272 not allowed! score: 0.05 median: 2.76 # of sequence: 184
+NM_152730.6  D158G :
+WARNING! G742 not allowed! score: 0.05 median: 3.11 # of sequence: 24
+NM_001291984.2  T854P :
+WARNING! C1013 not allowed! score: 0.05 median: 2.76 # of sequence: 90
+WARNING! M1016 not allowed! score: 0.05 median: 2.76 # of sequence: 90
+WARNING! C1196 not allowed! score: 0.04 median: 2.79 # of sequence: 84
+WARNING! C1301 not allowed! score: 0.04 median: 2.77 # of sequence: 85
+WARNING! P1422 not allowed! score: 0.05 median: 2.79 # of sequence: 80
+NM_032020.5  I83K :
+WARNING! Q45 not allowed! score: 0.03 median: 2.76 # of sequence: 100
+WARNING! G255 not allowed! score: 0.03 median: 2.76 # of sequence: 105
+NM_005228.5  Q701R :
+WARNING! Y112 not allowed! score: 0.03 median: 2.77 # of sequence: 85
+WARNING! M318 not allowed! score: 0.02 median: 2.82 # of sequence: 82
+WARNING! M650 not allowed! score: 0.03 median: 2.78 # of sequence: 88
+NM_001170905.3  V41F :
+WARNING! R27 not allowed! score: 0.05 median: 2.78 # of sequence: 184
+WARNING! M53 not allowed! score: 0.02 median: 2.75 # of sequence: 183
+WARNING! F167 not allowed! score: 0.04 median: 2.75 # of sequence: 202
+WARNING! V197 not allowed! score: 0.03 median: 2.75 # of sequence: 202
+WARNING! C200 not allowed! score: 0.03 median: 2.75 # of sequence: 202
+WARNING! G233 not allowed! score: 0.01 median: 2.75 # of sequence: 202
+WARNING! N250 not allowed! score: 0.05 median: 2.75 # of sequence: 202
+WARNING! Y294 not allowed! score: 0.02 median: 2.75 # of sequence: 202
+WARNING! D310 not allowed! score: 0.03 median: 2.75 # of sequence: 202
+WARNING! S406 not allowed! score: 0.02 median: 2.75 # of sequence: 198
+WARNING! H425 not allowed! score: 0.02 median: 2.80 # of sequence: 185
+NM_152754.2  S274Y :
+WARNING! S425 not allowed! score: 0.02 median: 2.75 # of sequence: 104
+NM_021930.6  D612H :
+WARNING! Q610 not allowed! score: 0.04 median: 2.81 # of sequence: 25
+NM_004668.3  S732I :
+WARNING! P656 not allowed! score: 0.04 median: 2.76 # of sequence: 56
+WARNING! N858 not allowed! score: 0.02 median: 2.76 # of sequence: 56
+NM_004668.3  N647K :
+WARNING! P656 not allowed! score: 0.04 median: 2.76 # of sequence: 56
+WARNING! N858 not allowed! score: 0.02 median: 2.76 # of sequence: 56
+NM_175571.4  H34Y :
+WARNING! I46 not allowed! score: 0.03 median: 2.76 # of sequence: 40
+NM_001002814.3  M273K :
+WARNING! W366 not allowed! score: 0.04 median: 3.21 # of sequence: 30
+NM_023110.3  E792K :
+WARNING! Q574 not allowed! score: 0.05 median: 2.78 # of sequence: 94
+NM_000780.4  K309E :
+WARNING! N264 not allowed! score: 0.05 median: 2.76 # of sequence: 42
+NM_013353.3  R102G :
+WARNING! D136 not allowed! score: 0.03 median: 2.75 # of sequence: 67
+NM_002016.2  S657Y :
+WARNING! I228 not allowed! score: 0.05 median: 3.15 # of sequence: 16
+NM_207308.2  L35R :
+WARNING! H853 not allowed! score: 0.05 median: 3.07 # of sequence: 26
+NM_181787.3  E85D :
+WARNING! T510 not allowed! score: 0.05 median: 2.77 # of sequence: 35
+NM_177531.6  A390E :
+WARNING! W2154 not allowed! score: 0.03 median: 2.82 # of sequence: 23
+NM_001039112.2  K1329R :
+WARNING! P225 not allowed! score: 0.04 median: 2.77 # of sequence: 48
+WARNING! W326 not allowed! score: 0.04 median: 2.77 # of sequence: 49
+WARNING! C942 not allowed! score: 0.04 median: 2.77 # of sequence: 54
+WARNING! A1017 not allowed! score: 0.04 median: 2.77 # of sequence: 54
+NM_144966.5  L814I :
+WARNING! M400 not allowed! score: 0.04 median: 2.79 # of sequence: 24
+WARNING! W460 not allowed! score: 0.04 median: 2.79 # of sequence: 24
+WARNING! A629 not allowed! score: 0.05 median: 2.79 # of sequence: 25
+WARNING! C1646 not allowed! score: 0.03 median: 2.82 # of sequence: 24
+NM_153809.2  H1182Q :
+WARNING! H263 not allowed! score: 0.04 median: 3.10 # of sequence: 41
+WARNING! S432 not allowed! score: 0.04 median: 2.95 # of sequence: 46
+WARNING! I631 not allowed! score: 0.05 median: 2.85 # of sequence: 50
+WARNING! K898 not allowed! score: 0.04 median: 2.80 # of sequence: 61
+WARNING! V1567 not allowed! score: 0.05 median: 2.92 # of sequence: 54
+NM_001042589.2  R377H :
+WARNING! F57 not allowed! score: 0.04 median: 3.15 # of sequence: 36
+NM_001004482.1  P79T :
+WARNING! L94 not allowed! score: 0.02 median: 2.77 # of sequence: 253
+WARNING! F226 not allowed! score: 0.01 median: 2.77 # of sequence: 253
+WARNING! P237 not allowed! score: 0.01 median: 2.77 # of sequence: 253
+WARNING! S238 not allowed! score: 0.02 median: 2.77 # of sequence: 253
+WARNING! R244 not allowed! score: 0.01 median: 2.77 # of sequence: 253
+WARNING! T250 not allowed! score: 0.02 median: 2.77 # of sequence: 253
+WARNING! C252 not allowed! score: 0.01 median: 2.77 # of sequence: 253
+WARNING! L257 not allowed! score: 0.04 median: 2.77 # of sequence: 253
+WARNING! F281 not allowed! score: 0.02 median: 2.77 # of sequence: 252
+WARNING! I282 not allowed! score: 0.02 median: 2.77 # of sequence: 252
+WARNING! R285 not allowed! score: 0.02 median: 2.77 # of sequence: 253
+WARNING! M291 not allowed! score: 0.05 median: 2.76 # of sequence: 251
+NM_001304509.2  E161K :
+WARNING! C196 not allowed! score: 0.03 median: 2.76 # of sequence: 23
+NM_018249.6  E1338V :
+WARNING! G184 not allowed! score: 0.03 median: 2.81 # of sequence: 39
+WARNING! C239 not allowed! score: 0.04 median: 2.81 # of sequence: 39
+WARNING! S1061 not allowed! score: 0.03 median: 3.03 # of sequence: 20
+NM_198946.3  F9L :
+WARNING! W108 not allowed! score: 0.05 median: 2.78 # of sequence: 21
+NM_001170574.1  D49N :
+WARNING! V67 not allowed! score: 0.03 median: 2.90 # of sequence: 94
+WARNING! H272 not allowed! score: 0.02 median: 2.93 # of sequence: 89
+WARNING! Y316 not allowed! score: 0.05 median: 3.01 # of sequence: 88
+NM_001143978.3  R85G :
+WARNING! C34 not allowed! score: 0.04 median: 3.01 # of sequence: 45
+WARNING! K58 not allowed! score: 0.04 median: 2.83 # of sequence: 57
+NM_016521.3  D357E :
+WARNING! C112 not allowed! score: 0.04 median: 2.82 # of sequence: 116
+NM_001005189.1  R16L :
+WARNING! M176 not allowed! score: 0.03 median: 2.74 # of sequence: 135
+WARNING! M259 not allowed! score: 0.03 median: 2.74 # of sequence: 135
+WARNING! H300 not allowed! score: 0.03 median: 2.74 # of sequence: 130
+NM_003126.4  S1676I :
+WARNING! I133 not allowed! score: 0.04 median: 2.87 # of sequence: 39
+WARNING! I1025 not allowed! score: 0.03 median: 2.88 # of sequence: 38
+WARNING! S1352 not allowed! score: 0.04 median: 2.89 # of sequence: 38
+WARNING! R1654 not allowed! score: 0.04 median: 2.89 # of sequence: 39
+WARNING! M1859 not allowed! score: 0.02 median: 2.86 # of sequence: 40
+WARNING! V2046 not allowed! score: 0.04 median: 2.95 # of sequence: 35
+WARNING! L2055 not allowed! score: 0.04 median: 2.95 # of sequence: 35
+WARNING! M2062 not allowed! score: 0.03 median: 2.95 # of sequence: 35
+WARNING! V2217 not allowed! score: 0.03 median: 2.95 # of sequence: 35
+NM_178527.4  L790R :
+WARNING! G419 not allowed! score: 0.03 median: 2.77 # of sequence: 33
+WARNING! V789 not allowed! score: 0.04 median: 2.76 # of sequence: 36
+WARNING! C823 not allowed! score: 0.04 median: 2.79 # of sequence: 34
+WARNING! N848 not allowed! score: 0.02 median: 2.79 # of sequence: 35
+WARNING! G897 not allowed! score: 0.05 median: 2.76 # of sequence: 33
+WARNING! M900 not allowed! score: 0.03 median: 2.76 # of sequence: 34
+WARNING! C1020 not allowed! score: 0.03 median: 2.77 # of sequence: 35
+NM_014625.4  K126N :
+WARNING! A297 not allowed! score: 0.02 median: 2.76 # of sequence: 140
+NM_003292.3  D936Y :
+WARNING! Q835 not allowed! score: 0.05 median: 2.83 # of sequence: 21
+WARNING! N1578 not allowed! score: 0.02 median: 2.86 # of sequence: 22
+NM_001364878.1  E99K :
+WARNING! W85 not allowed! score: 0.04 median: 2.80 # of sequence: 59
+NM_001877.5  P777L :
+WARNING! S771 not allowed! score: 0.03 median: 2.90 # of sequence: 31
+NM_025179.4  R1323Q :
+WARNING! F326 not allowed! score: 0.04 median: 2.78 # of sequence: 46
+WARNING! H800 not allowed! score: 0.03 median: 2.77 # of sequence: 57
+WARNING! F1064 not allowed! score: 0.05 median: 2.77 # of sequence: 56
+WARNING! C1463 not allowed! score: 0.04 median: 2.77 # of sequence: 55
+NM_025179.4  P1019L :
+WARNING! F326 not allowed! score: 0.04 median: 2.78 # of sequence: 46
+WARNING! H800 not allowed! score: 0.03 median: 2.77 # of sequence: 57
+WARNING! F1064 not allowed! score: 0.05 median: 2.77 # of sequence: 56
+WARNING! C1463 not allowed! score: 0.04 median: 2.77 # of sequence: 55
+NM_001098623.2  R465H :
+WARNING! W2015 not allowed! score: 0.04 median: 2.90 # of sequence: 17
+WARNING! C4968 not allowed! score: 0.05 median: 2.85 # of sequence: 15
+NM_020808.4  Q1622H :
+WARNING! P1459 not allowed! score: 0.03 median: 2.90 # of sequence: 37
+NM_000254.2  G492R :
+WARNING! H50 not allowed! score: 0.04 median: 2.77 # of sequence: 289
+WARNING! G243 not allowed! score: 0.03 median: 2.75 # of sequence: 294
+WARNING! I273 not allowed! score: 0.02 median: 2.75 # of sequence: 295
+WARNING! M313 not allowed! score: 0.04 median: 2.75 # of sequence: 295
+WARNING! C400 not allowed! score: 0.02 median: 2.77 # of sequence: 373
+WARNING! V404 not allowed! score: 0.04 median: 2.76 # of sequence: 374
+WARNING! T511 not allowed! score: 0.02 median: 2.75 # of sequence: 379
+WARNING! H559 not allowed! score: 0.02 median: 2.75 # of sequence: 379
+WARNING! H624 not allowed! score: 0.05 median: 2.75 # of sequence: 376
+WARNING! A851 not allowed! score: 0.03 median: 2.75 # of sequence: 371
+WARNING! M942 not allowed! score: 0.04 median: 2.79 # of sequence: 356
+WARNING! H1014 not allowed! score: 0.01 median: 2.78 # of sequence: 352
+WARNING! L1223 not allowed! score: 0.02 median: 2.76 # of sequence: 348
+NM_001035.3  P816T :
+WARNING! V894 not allowed! score: 0.05 median: 2.87 # of sequence: 92
+WARNING! M981 not allowed! score: 0.04 median: 2.87 # of sequence: 95
+WARNING! A1066 not allowed! score: 0.04 median: 2.87 # of sequence: 88
+WARNING! I1521 not allowed! score: 0.04 median: 2.90 # of sequence: 78
+WARNING! V2086 not allowed! score: 0.04 median: 2.90 # of sequence: 87
+WARNING! Q2754 not allowed! score: 0.04 median: 2.87 # of sequence: 93
+WARNING! M2757 not allowed! score: 0.04 median: 2.87 # of sequence: 92
+WARNING! D3176 not allowed! score: 0.04 median: 2.89 # of sequence: 92
+WARNING! L3268 not allowed! score: 0.05 median: 2.89 # of sequence: 92
+WARNING! I3513 not allowed! score: 0.04 median: 2.89 # of sequence: 88
+NM_001355235.1  L73F :
+WARNING! C121 not allowed! score: 0.04 median: 2.77 # of sequence: 255
+WARNING! C201 not allowed! score: 0.03 median: 2.77 # of sequence: 255
+WARNING! V301 not allowed! score: 0.05 median: 2.77 # of sequence: 249
+NM_001004687.1  P166S :
+WARNING! S104 not allowed! score: 0.00 median: 2.75 # of sequence: 282
+WARNING! L238 not allowed! score: 0.05 median: 2.75 # of sequence: 282
+WARNING! T279 not allowed! score: 0.00 median: 2.75 # of sequence: 282
+NM_001494.4  D415E :
+WARNING! T105 not allowed! score: 0.03 median: 2.79 # of sequence: 128
+WARNING! Q261 not allowed! score: 0.04 median: 2.79 # of sequence: 134
+NM_006257.5  V180F :
+WARNING! M444 not allowed! score: 0.04 median: 2.75 # of sequence: 97
+WARNING! L633 not allowed! score: 0.02 median: 2.78 # of sequence: 91
+WARNING! M697 not allowed! score: 0.03 median: 2.74 # of sequence: 80
+NM_021738.3  D2147H :
+WARNING! A1465 not allowed! score: 0.05 median: 2.87 # of sequence: 296
