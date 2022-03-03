@@ -84,25 +84,38 @@ close IN;
 
 open IN, "$BLASTfile" or die "cannot open $BLASTfile\n";
 $firstentry = 1;
+$line = 0;
 while (<IN>) {
+  $line += 1;
   if (/^# BLASTP/) {
-    if ($firstentry) { $firstentry = 0 } else { &treatentry }
+    if ($firstentry) { $firstentry = 0 } else { 
+        print "treating entry ${line} - ${NPDB}:${mutationstring}\n"; 
+       #&treatentry; 
+       }
     $ismatch = 0;
   } elsif (/^# Query: (\d+)/) {
     $Nvar = $1;
   } elsif (/^(\d+)\t(.+)_(\w)\t([0-9\.]+\t(.+)\n$)/) {
       # variant number ; PDB number ; chain ; %ident ; rest of line
     if ($1 != $Nvar) { die "var number mismatch at $Nvar $1\n"; }
-    if ($ismatch) {
-      if ($4 == 100.0 and $2 == $NPDB) {
-        $chain = $3 ; $restofline = $5;
-        &treathit;
-      }
-    } else {
+     
+    if ( ($4 == 100.0) && ($2 eq $NPDB) ) {
+      $ismatch = 1;
+      $NPDB = $2 ; $chain = $3 ; $restofline = $5;
+      print "match ${line} -  ${NPDB} - $mutationstring:  ${restofline}\n"; 
+      $newmutationstring = &treathit;
+      if ($newmutationstring) { print "new mutationstring: ${newmutationstring}\n"; &treatentry; } 
+    }
+    else {
       if ($4 == 100.0) {
         $ismatch = 1;
         $NPDB = $2 ; $chain = $3 ; $restofline = $5;
-        &treathit;
+        print "else ${line} - ${NPDB}: ${restofline}\n"; 
+        $mutationstring = &treathit;
+        print "mutation string after hit: ${mutationstring}\n"; 
+        if ($mutationstring) {
+            &treatentry;
+           }
       }
     }
   }
@@ -138,11 +151,13 @@ sub treathit {
       $NPDB_chain_pos = $NPDB_chain_pos{$NPDB_chain}[$seq_pos];
       $seq_aa = substr($NPDB_chain_seq{$NPDB_chain},$seq_pos - 1,1);
       if ($seq_aa eq $refAA[$Nvar]) {
-        $mutationstring .= "$refAA[$Nvar]$chain$NPDB_chain_pos$altAA[$Nvar],";
+        print "mutatationstring: ${NPDB_chain} ${seq_pos}\n";
+        $mutationstring = "$refAA[$Nvar]$chain$NPDB_chain_pos$altAA[$Nvar],";
       } else {
         print LOG "var_$Nvar : $refAA[$Nvar] on position $seqpos[$Nvar] of $seqID[$Nvar] does not match $seq_aa on position $NPDB_chain_pos of PDB entry $NPDB chain $chain\n";
         $aa_mismatch = 1;
       }
     }
   }
+  return $mutationstring;
 }

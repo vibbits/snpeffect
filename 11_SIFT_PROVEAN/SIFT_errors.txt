@@ -1,0 +1,6 @@
+NM_004740.3  G111V :
+ERROR! Not enough sequences (only 2) found by the PSI-BLAST search! Program terminated.
+NM_032504.1  D1327Y :
+choose seqs time limit exceeded.
+NM_001040105.2  P1284H :
+PSI-BLAST time limit exceeded.
