@@ -1,1 +1,1 @@
-var_450 (NM_002024.5 413) has SNP outside PDB entry AF-Q06787-F1-model_v1_Repair.
+
