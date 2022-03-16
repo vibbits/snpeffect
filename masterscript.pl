@@ -232,7 +232,7 @@ PARSEFOLDX: # put the pieces together to make the final FoldX report
 if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXreport.pl") {
   die "problem with step PARSEFOLDX makeFoldXreport.pl\n";
 }
-if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXSequenceDetailreport.pl") {
+if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXSequenceDetailreport.pl $PDBDIR") {
   die "problem with step PARSEFOLDX makeFoldXSequenceDetailreport.pl\n";
 }
 if (system "qsub -cwd -b y -sync y -l mem_limit=$MEM $scriptdir/makeFoldXAnalyseComplexreport.pl") {
