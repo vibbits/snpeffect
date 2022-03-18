@@ -32,7 +32,7 @@ while (<IN>) {
 
 open IN, 'variants4foldX.tab' or die "cannot open variants4foldX.tab\n";
 open OUT, '>FoldXreport.tab';
-print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tlocation on transcript\tPDB file\tmutationstring\tchains\tinteracting chains\tdelta interaction energy\tSD\ttotal energy\tBackbone Hbond\tSidechain Hbond\tVan der Waals\tElectrostatics\tSolvation Polar\tSolvation Hydrophobic\tVan der Waals clashes\tentropy sidechain\tentropy mainchain\tsloop_entropy\tmloop_entropy\tcis_bond\ttorsional clash\tbackbone clash\thelix dipole\twater bridge\tdisulfide\telectrostatic kon\tpartial covalent bonds\tenergy Ionisation\tEntropy Complex\tpLDDT\n";
+print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tlocation on transcript\tPDB file\tmutationstring\tchains\tinteracting chains\tdelta interaction energy\tSD\ttotal energy\tBackbone Hbond\tSidechain Hbond\tVan der Waals\tElectrostatics\tSolvation Polar\tSolvation Hydrophobic\tVan der Waals clashes\tentropy sidechain\tentropy mainchain\tsloop_entropy\tmloop_entropy\tcis_bond\ttorsional clash\tbackbone clash\thelix dipole\twater bridge\tdisulfide\telectrostatic kon\tpartial covalent bonds\tenergy Ionisation\tEntropy Complex\n";
 while (<IN>) {
   chomp;
   if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(.+.pdb)\t(.*)$/) {
@@ -52,7 +52,7 @@ while (<IN>) {
     if (not exists $chainsinfo{$key}){
       die "pair $key not found in interactingchains.tab\n";
     }
-    print OUT "var_$_\t$chainsinfo{$key}\t$BuilModeloutput{$key}\t${tempfactor}\n";
+    print OUT "var_$_\t$chainsinfo{$key}\t$BuilModeloutput{$key}\n";
   }
 }
 close IN; close OUT;
