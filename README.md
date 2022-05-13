@@ -48,7 +48,7 @@ If this database is updated or you want to use an alternative PDB database, you 
 
 # Pipeline testing
 
-After installation the user can run the input VCF file from the SHP-77 carcinoma cell line as a test case to verify correct installment of the software. The input file, intermediate and output files of the test case can be found in the test case folder of this repository. 
+After installation the user can run the input VCF file from the SHP-77 carcinoma cell line as a test case to verify correct installment of the software. The input file, intermediate and output files of the test case can be found in the different folders of this repository (named after each step of the pipeline). 
 
 # Perform analysis
 
