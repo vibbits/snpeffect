@@ -44,7 +44,11 @@ Finally, you need to create a BLAST database of the PDB files. In a new empty fo
   perl extractseqfromPDB.pl <PDBsdir>
   <blastdir>/makeblastdb -dbtype prot -in PDBsequences.fa -out PDB
 ```
-If this database is updated or you want to use an alternative PDB database, you can follow the same steps to recreate the BLAST database. 
+If this database is updated or you want to use an alternative PDB database, you can follow the same steps to recreate the BLAST database.
+
+# Pipeline testing
+
+After installation the user can run the input VCF file from the SHP-77 carcinoma cell line as a test case to verify correct installment of the software. The input file, intermediate and output files of the test case can be found in the test case folder of this repository. 
 
 # Perform analysis
 
@@ -68,7 +72,6 @@ alternative transcript per mutated gene, using the UniProt standards. The
 current version of `masterscript.pl` proposes this by default. Note however
 that you loose some data since some genes are not in the list and
 some mutations are not in the standard transcript.
-
 
 # OUTPUT files
   
@@ -104,7 +107,7 @@ mutation instruction is lacking and you have instead :
   environment of the amino acid (33 cols)
 
 The file FoldXreport_AnalyseComplex.tab contains for those proteins for
-which the mutation can affect the interaction between chains:
+which the mutation can affect the interaction between chains (not useful for AlphaFold models):
 - the labels of each pair of chains (2 cols)
 - a prediction of the effect of the mutation (5 cols)
 
