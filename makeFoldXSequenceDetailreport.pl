@@ -36,7 +36,7 @@ close IN;
 
 open IN, 'variants4foldX.tab' or die "cannot open variants4foldX.tab\n";
 open OUT, '>FoldXreport_SequenceDetail.tab';
-print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tposition mutation\tPDB file\tamino acid\tchain\tnumber\tomega angle\tphi angle\tpsi angle\tSecondary Structure\ttotal energy\tBackbone Hbond\tSidechain Hbond\tVan der Waals\tElectrostatics\tSolvation Polar\tSolvation Hydrophobic\tVan der Waals clashes\tentropy sidechain\tentropy mainchain\tsloop_entropy\tmloop_entropy\tcis_bond\ttorsional clash\tbackbone clash\thelix dipole\twater bridge\tdisulfide\telectrostatic kon\tpartial covalent bonds\tenergy Ionisation\tEntropy Complex\theteroBackHbond\theteroSideHbond\tsidechain burial\tmainchain burial\tsidechain Occ\tmainchain Occ\tindex\tpLDDT";
+print OUT "variant\tchromosomal location\tmutation\tgene ID\tgene name\ttranscript ID\tposition mutation\tPDB file\tomega angle\tphi angle\tpsi angle\tSecondary Structure\ttotal energy\tBackbone Hbond\tSidechain Hbond\tVan der Waals\tElectrostatics\tSolvation Polar\tSolvation Hydrophobic\tVan der Waals clashes\tentropy sidechain\tentropy mainchain\tsloop_entropy\tmloop_entropy\tcis_bond\ttorsional clash\tbackbone clash\thelix dipole\twater bridge\tdisulfide\telectrostatic kon\tpartial covalent bonds\tenergy Ionisation\tEntropy Complex\theteroBackHbond\theteroSideHbond\tsidechain burial\tmainchain burial\tsidechain Occ\tmainchain Occ\tindex\tpLDDT";
 while (<IN>) {
   chomp;
   if (not /^\d+\t\w+:\d+-\d+\t[A-Z]+\/[A-Z]+\t.+\t.+[\w\.]+\t\d+\t(.+.pdb)\t(.*)$/) {
