@@ -86,10 +86,10 @@ related protein. Each file contains the following columns :
 - gene and transcript identifiers from the reference genome (3 cols)
 - position SNP in protein (1 col)
 - reference PDB sequence ID (1 col)
-- FoldX mutation instruction (1 col)
 
 The file FoldXreport.tab contains one row for each variant and has
 besides the common information:
+- FoldX mutation instruction (1 col)
 - the labels of the polypeptide chains in the model (1 col)
 - the labels of those polypeptide chains that are reported to interact
   energenetically (1 col)
@@ -100,11 +100,9 @@ besides the common information:
 The file FoldXreport_SequenceDetail.tab contains for each variant as many
 rows as there are polypeptide chains affected by the mutation. The FoldX
 mutation instruction is lacking and you have instead :
-- the amino acid (1 col)
-- the label of the polypeptide chain and the position of the amino acid in
-  this chain (2 cols)
 - the output of the FoldX SequenceDetail command, which describes the
   environment of the amino acid (33 cols)
+- the pLDDT score from AlphaFold structures (1 col)
 
 The file FoldXreport_AnalyseComplex.tab contains for those proteins for
 which the mutation can affect the interaction between chains (not useful for AlphaFold models):
