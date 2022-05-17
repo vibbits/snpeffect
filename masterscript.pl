@@ -33,7 +33,7 @@
 #The user MUST specify the correct pathway for each tool
 
 #path of the directory containing the masterscript.pl
-$scriptdir = '';  # Example: '/switchlab/group/ramdur/scripts'
+$scriptdir = '';  # Example: '/switchlab/group/ramdur/snpeffect-master'
 #path to snpEff software
 $SnpEffjar = '';  # Example: '/switchlab/group/guybot/snpEff/snpEff.jar'
 #path to blastp
