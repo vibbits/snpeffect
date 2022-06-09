@@ -75,10 +75,16 @@ sub fetch_temp_factor {
   while (<INPDB>) {
       chomp;
       my $line = $_;
+      print "line: ${line}\n";
       if ($line =~ m/^ATOM\s+\d+\s+\w+\s+(\w{3})\s+(\w)\s?(\s?\s?\d+)\s+(\S+\.\S+)\s+(\S+\.\S+)\s+(\S+\.\S+)\s+.+\..+\..+/ig) {
          $id = $3;
+         $chainFromLine = $2;
+         print "number: ${number}\n";
          $id =~ s/^\s+//;
-         if ($2 eq $chain & $id eq $number & length($line) == 66 ) {
+         print "id: ${id}\n";
+         print "2: ${chainFromLine}\n";
+         print "chain: ${chain}\n";
+         if ($chainFromLine eq $chain & $id eq $number & length($line) == 66 ) {
                 $tempfactor = substr($line, -6);
                 $tempfactor =~ s/^\s+//;
            } 
