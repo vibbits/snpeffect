@@ -7,9 +7,9 @@ The current scripts can be executed on a cluster or HPC system using the Sun GRI
 
 ## Provisioning of installed tool for command line use on HPCs (Linux)
 In order to kick-start the use of the pipeline, we provided a folder at https://console.cloud.google.com/storage/browser/snpeffect-5-data with around 3/4 of the software tools (where the license allows sharing) to be copied to a writeable folder on an HPC system . 
-Once you have downloaded the folders to a Linux based storage present within an HPC system, you will need to get the following software tools from the respective licensees FoldX and WALTZ from CRG and VIB and tmhmm from DTU and installed them in the same storage location. 
+Once you have downloaded the folders to a Linux based storage present within an HPC system, you will need to get the following software tools from the respective licensees FoldX and WALTZ from CRG and VIB and tmhmm from DTU and install them in the same storage location. 
 
-Once the tools have been downloaded or the respective modules have been loaded on an HPC cluster, you need to specify the absolute path of each tool in the `masterscript.pl`.
+Once the tools have been downloaded, you need to specify the absolute path of each tool in the `masterscript.pl`.
 
 ## Tools
 
