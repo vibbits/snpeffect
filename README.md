@@ -10,24 +10,25 @@ The current scripts can be executed on a cluster using the Sun GRID system. In c
 There are a number of bioinformatics tools which are used in this pipeline and need to be installed prior to use on the cluster system. Below, you can find an overview of tools, its versions, the download location, and license. 
 For AGADIR (a wrapper containing the protein aggregation predictors TANGO and WALTZ), you can unzip the file `agadirwrapper.zip`.
 
-| tool | version | download location | license information |
-| --- | --- | ---| --- | 
-| SnpEff  5.0 | 2020-08-09 | http://pcingola.github.io/SnpEff/download/| SnpEff is open source, released as "LGPLv3". |
+| tool | version | download location | download location Singularity image | license information |
+| --- | --- | ---| --- | --- |
+| SnpEff  5.0 | 2020-08-09 | http://pcingola.github.io/SnpEff/download/ | https://depot.galaxyproject.org/singularity/snpeff%3A5.0--0 | SnpEff is open source, released as "LGPLv3". |
 | ncbi-blast-2.10.0+/ | 2.10.0 | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ |https://en.wikipedia.org/wiki/Public_domain | 
-| FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | http://foldxsuite.crg.eu/academic-license-info | 
-| AlphaFold Protein structure database | download 15-08-2021 | https://alphafold.ebi.ac.uk/download | CC-BY 4.0 |
-| HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | Freely distributed under the BSD open source license |
-| Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | not specified |
-| tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | dedicated license from DTU |
-| perl | > 5.14.2 | https://www.perl.org/get.html | GPL or Artistic License |
-| sift | 6.2.1 | https://s3.amazonaws.com/sift-public/nsSNV/sift6.2.1.tar.gz | more info https://sift.bii.a-star.edu.sg/www/SIFT_help.html |
-| ncbi-blast | 2.4.0+ | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.4.0/ | https://en.wikipedia.org/wiki/Public_domain |
-| UniRef90 | 11-Jan-2011 release | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/ | Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
-| PROVEAN | v.1.1.5 (May 7, 2014)| http://provean.jcvi.org/downloads/README | http://provean.jcvi.org/downloads/LICENSE | 
-| CD-HIT | 4.8.1 | https://github.com/weizhongli/cdhit | GPL v2 | 
-| NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | https://en.wikipedia.org/wiki/Public_domain |
+| FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | needs to be installed seperately | http://foldxsuite.crg.eu/academic-license-info | 
+| AlphaFold Protein structure database | download 15-08-2021 | see creation of blastDB in this repository | https://alphafold.ebi.ac.uk/download | CC-BY 4.0 |
+| HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | https://depot.galaxyproject.org/singularity/hmmer%3A3.2.1--he1b5a44_2 | Freely distributed under the BSD open source license |
+| Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | needs to be built according to  | not specified |
+| tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | needs to be installed seperately | dedicated license from DTU |
+| perl | > 5.14.2 | https://www.perl.org/get.html | needs to be present on the compute system | GPL or Artistic License |
+| sift | 6.2.1 | https://s3.amazonaws.com/sift-public/nsSNV/sift6.2.1.tar.gz |  | more info https://sift.bii.a-star.edu.sg/www/SIFT_help.html |
+| ncbi-blast | 2.4.0+ | https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.4.0/ | https://depot.galaxyproject.org/singularity/blast%3A2.10.1--pl526he19e7b1_0 | https://en.wikipedia.org/wiki/Public_domain |
+| UniRef90 | 11-Jan-2011 release | https://ftp.ebi.ac.uk/pub/databases/uniprot/previous_releases/release-2011_01/uniref/ |  | Creative Commons Attribution (CC BY 4.0) License to all copyrightable parts of our databases.|
+| PROVEAN | v.1.1.5 (May 7, 2014)| http://provean.jcvi.org/downloads/README | https://depot.galaxyproject.org/singularity/provean%3A1.1.5--h87f3376_0 | http://provean.jcvi.org/downloads/LICENSE | 
+| CD-HIT | 4.8.1 | https://github.com/weizhongli/cdhit | https://depot.galaxyproject.org/singularity/cd-hit%3A4.8.1--h2e03b76_4  | GPL v2 | 
+| NCBI nr (non-redundant) protein database | Aug 2011 | https://www.ncbi.nlm.nih.gov/home/download/ | to be downloaded via location (7.2 GB) | https://en.wikipedia.org/wiki/Public_domain |
 
-Once the tools have been downloaded, you need to specify the path of each tool in the `masterscript.pl`.
+Once the tools have been downloaded or the respective modules have been loaded on an HPC cluster, you need to specify the path of each tool in the `masterscript.pl`.
+
 In addition you will nead to download and install the human genome database for SnpEff (hg19 and/or hg38). You can pre-install databases manually using the `SnpEff download` command (once SnpEff is installed). E.g. to download the human genome database hg38:
 ```
   java -jar <snpEff>/snpEff.jar download hg38
