@@ -96,12 +96,8 @@ besides the common information:
 - the change in interaction energy caused by the mutation (1 col)
 - the output of the FoldX BuildModel command, which predicts the effect
   of the mutation on the 3D structure (23 cols).
-
-The file FoldXreport_SequenceDetail.tab contains for each variant as many
-rows as there are polypeptide chains affected by the mutation. The FoldX
-mutation instruction is lacking and you have instead :
-- the output of the FoldX SequenceDetail command, which describes the
-  environment of the amino acid (33 cols)
+- part of the output of the FoldX SequenceDetail command, which describes the
+  environment of the amino acid (e.g. main and side chain burial). (4 cols)
 - the pLDDT score from AlphaFold structures (1 col)
 
 The file FoldXreport_AnalyseComplex.tab contains for those proteins for
