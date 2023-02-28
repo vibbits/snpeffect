@@ -3,7 +3,13 @@ This repository accompanies the publication "SNPeffect 5.0: Large-scale structur
 # Prerequisites
 
 ## GRID system
-The current scripts can be executed on a cluster using the Sun GRID system. In case, you like to use a different cluster system, you need to change all `qsub` commands in the `masterscript.pl`.
+The current scripts can be executed on a cluster or HPC system using the Sun GRID system. In case, you like to use a different cluster system, you need to change all `qsub` commands in the `masterscript.pl`.
+
+## Provisioning of installed tool for command line use on HPCs (Linux)
+In order to kick-start the use of the pipeline, we provided a folder at https://console.cloud.google.com/storage/browser/snpeffect-5-data with around 3/4 of the software tools (where the license allows sharing) to be copied to a writeable folder on an HPC system . 
+Once you have downloaded the folders to a Linux based storage present within an HPC system, you will need to get the following software tools from the respective licensees FoldX and WALTZ from CRG and VIB and tmhmm from DTU and installed them in the same storage location. 
+
+Once the tools have been downloaded or the respective modules have been loaded on an HPC cluster, you need to specify the absolute path of each tool in the `masterscript.pl`.
 
 ## Tools
 
@@ -17,7 +23,7 @@ For AGADIR (a wrapper containing the protein aggregation predictors TANGO and WA
 | FoldX | 3.0 Beta 6 | http://foldxsuite.crg.eu/ | needs to be installed seperately | http://foldxsuite.crg.eu/academic-license-info | 
 | AlphaFold Protein structure database | download 15-08-2021 | see creation of blastDB in this repository | https://alphafold.ebi.ac.uk/download | CC-BY 4.0 |
 | HMMER | 3.2.1 (June 2018) | http://hmmer.org/ | https://depot.galaxyproject.org/singularity/hmmer%3A3.2.1--he1b5a44_2 | Freely distributed under the BSD open source license |
-| Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | needs to be built according to  | not specified |
+| Gene3D | n/a | http://gene3d.biochem.ucl.ac.uk/about#summary | preconfigured version see download via https://console.cloud.google.com/storage/browser/snpeffect-5-data| not specified |
 | tmhmm | 2.0c | https://services.healthtech.dtu.dk/cgi-bin/sw_request | needs to be installed seperately | dedicated license from DTU |
 | perl | > 5.14.2 | https://www.perl.org/get.html | needs to be present on the compute system | GPL or Artistic License |
 | sift | 6.2.1 | https://s3.amazonaws.com/sift-public/nsSNV/sift6.2.1.tar.gz |  | more info https://sift.bii.a-star.edu.sg/www/SIFT_help.html |
